@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Türkiye Geneli Hasarlı Araç Alımı - Nakit Ödeme</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#18b9b1",
+                        "primary-dark": "#13968f",
+                        "secondary": "#0e1b1a",
+                        "background-light": "#ffffff",
+                        "background-dark": "#112120",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #18b9b1;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .dark .glass-effect {
+            background: rgba(17, 33, 32, 0.95);
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-secondary dark:text-white antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen flex-col">
+<div class="bg-secondary dark:bg-black py-2 px-4 w-full z-50 relative border-b border-white/10">
+<div class="max-w-[1280px] mx-auto flex justify-center items-center text-center">
+<p class="text-white/90 text-xs md:text-sm font-medium leading-normal flex flex-wrap justify-center gap-x-6">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">schedule</span> 7/24 Hizmet</span>
+<span class="hidden sm:inline text-white/20">•</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">payments</span> Aynı Gün Nakit</span>
+<span class="hidden sm:inline text-white/20">•</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">auto_towing</span> Ücretsiz Çekici</span>
+</p>
+</div>
+</div>
+<header class="sticky top-0 z-40 w-full glass-effect border-b border-slate-100 dark:border-white/5 shadow-sm transition-all duration-300">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 h-[80px] flex items-center justify-between">
+<div class="flex items-center gap-3 text-secondary dark:text-white shrink-0 cursor-pointer">
+<div class="size-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-size: 28px;">car_crash</span>
+</div>
+<div>
+<h2 class="text-lg md:text-xl font-extrabold leading-none tracking-tight">Hasarlı Araç</h2>
+<span class="text-xs font-semibold text-primary uppercase tracking-widest">Alım Merkezi</span>
+</div>
+</div>
+<nav class="hidden xl:flex items-center gap-8">
+<a class="text-secondary/80 dark:text-white/80 hover:text-primary dark:hover:text-primary text-sm font-bold transition-colors" href="#nasil-calisir">Nasıl Çalışır?</a>
+<a class="text-secondary/80 dark:text-white/80 hover:text-primary dark:hover:text-primary text-sm font-bold transition-colors" href="#araclar">Hangi Araçlar?</a>
+<a class="text-secondary/80 dark:text-white/80 hover:text-primary dark:hover:text-primary text-sm font-bold transition-colors" href="#neden-biz">Neden Biz?</a>
+<a class="text-secondary/80 dark:text-white/80 hover:text-primary dark:hover:text-primary text-sm font-bold transition-colors" href="#sss">S.S.S.</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="hidden md:flex group items-center justify-center gap-2 overflow-hidden rounded-lg h-11 px-5 bg-[#25D366]/10 hover:bg-[#25D366] border border-[#25D366]/20 text-[#25D366] hover:text-white text-sm font-bold transition-all" href="#">
+<span class="material-symbols-outlined text-[20px] fill-current">chat</span>
+<span>WhatsApp</span>
+</a>
+<a class="flex items-center justify-center gap-3 overflow-hidden rounded-lg h-11 px-5 bg-primary hover:bg-primary-dark text-white shadow-lg shadow-primary/30 transition-all transform hover:scale-105" href="tel:05551234567">
+<span class="material-symbols-outlined text-[22px] fill-current">call</span>
+<div class="flex flex-col items-start leading-none">
+<span class="text-[10px] font-medium opacity-90 uppercase tracking-wide">HEMEN ARA</span>
+<span class="text-sm md:text-base font-bold">0555 123 45 67</span>
+</div>
+</a>
+<button class="xl:hidden p-2 text-secondary dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="@container w-full">
+<div class="w-full relative bg-secondary">
+<div class="absolute inset-0 z-0 opacity-30">
+<img alt="Abstract background of a car or vehicle texture with modern lighting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5HK9UHLL004L3RWeGRgvn_4WUE2AE2yxDrjO54gGTYNW28xeVK3QpYXuuF2cqXYjVbSY96qFOmwypFwBTyMYMDU0_tAU4D9UBigf-yUK9EGpH381xUBHAfBcWcbys5MMneaYR6Mo8kMgLQyX4vnw4a9XW17E5B0lpVRGCM--XNPIVtivjVaJAEf_FBHFPC5TSmtC5R8zjSuKlh7aIVQA8EirsiNjRfTaev5GPLsIjSxY5SggiazTg8wXj7J-TP2vtK0OqWhVDjDoU"/>
+<div class="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/60"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 py-20 md:py-32 flex flex-col items-start justify-center min-h-[600px]">
+<div class="max-w-3xl flex flex-col gap-8 animate-fade-in-up">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm w-fit">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="text-primary text-xs md:text-sm font-bold uppercase tracking-wider">En İyi Fiyat Garantisi</span>
+</div>
+<h1 class="text-white text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight">
+                                Türkiye Geneli <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-300">Hasarlı Araç Alımı</span>
+</h1>
+<p class="text-gray-300 text-lg md:text-xl font-medium leading-relaxed max-w-xl">
+                                Aracınızın hasar durumu ne olursa olsun, değerinde nakit olarak satın alıyoruz. Güvenli işlem, hızlı ödeme ve yerinden teslim alma avantajlarıyla.
+                            </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto">
+<button class="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-primary hover:bg-primary-dark px-8 text-base font-bold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-[1.02] active:scale-[0.98]">
+                                    HEMEN FİYAT AL
+                                    <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+<button class="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 text-base font-bold transition-all shadow-lg shadow-green-900/20">
+<span class="material-symbols-outlined mr-2 fill-current">chat</span>
+                                    WhatsApp İle Gönder
+                                </button>
+</div>
+<div class="mt-10 pt-8 border-t border-white/10 flex flex-wrap items-center gap-6 md:gap-10 text-sm font-semibold text-gray-300">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<span>Güvenli İşlem</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">bolt</span>
+<span>Hızlı Ödeme</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">local_shipping</span>
+<span>Yerinden Alım</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-[#152625] py-16 border-b border-slate-200 dark:border-white/5">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="text-center mb-10">
+<h2 class="text-2xl md:text-3xl font-bold text-secondary dark:text-white mb-3">Şehir Seçin</h2>
+<p class="text-gray-500 dark:text-gray-400">Türkiye'nin 81 ilinden araç alımı yapıyoruz. Bulunduğunuz şehri seçerek hemen teklif alın.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">İstanbul</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Ankara</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">İzmir</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Bursa</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Antalya</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Adana</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Kocaeli</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Konya</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Mersin</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Gaziantep</a>
+<a class="flex items-center justify-center h-12 rounded bg-white dark:bg-white/5 hover:bg-primary hover:text-white dark:hover:bg-primary text-secondary dark:text-gray-300 font-semibold text-sm border border-slate-200 dark:border-white/10 transition-colors" href="#">Samsun</a>
+<a class="flex items-center justify-center h-12 rounded border-2 border-dashed border-primary/30 text-primary font-bold text-sm hover:bg-primary/5 transition-colors" href="#">
+                            Diğer Şehirler
+                            <span class="material-symbols-outlined text-[16px] ml-1">expand_more</span>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark py-20" id="neden-biz">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">AVANTAJLARIMIZ</span>
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white leading-tight">Neden Bizi Tercih Etmelisiniz?</h2>
+<p class="mt-4 text-gray-500 dark:text-gray-400 text-lg">Yılların verdiği tecrübe ve kurumsal hizmet anlayışımızla aracınızı güvenle satabilirsiniz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white dark:bg-[#1a2c2b] p-8 rounded-2xl border border-slate-100 dark:border-white/5 shadow-sm hover:shadow-lg transition-all group">
+<div class="size-16 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">security</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Resmî ve Güvenli İşlem</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Tüm alım satım işlemleri noter huzurunda, yasal prosedürlere uygun ve güvenli bir şekilde gerçekleştirilir.</p>
+</div>
+<div class="bg-white dark:bg-[#1a2c2b] p-8 rounded-2xl border border-slate-100 dark:border-white/5 shadow-sm hover:shadow-lg transition-all group">
+<div class="size-16 rounded-xl bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">payments</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Aynı Gün Nakit Ödeme</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Noter satışı gerçekleştiği anda ödemeniz banka hesabınıza havale/EFT yoluyla veya nakit olarak yapılır.</p>
+</div>
+<div class="bg-white dark:bg-[#1a2c2b] p-8 rounded-2xl border border-slate-100 dark:border-white/5 shadow-sm hover:shadow-lg transition-all group">
+<div class="size-16 rounded-xl bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">auto_towing</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Ücretsiz Çekici Hizmeti</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Aracınız çalışmıyor olsa bile, kendi çekicilerimizle adresinizden tamamen ücretsiz olarak alıyoruz.</p>
+</div>
+<div class="bg-white dark:bg-[#1a2c2b] p-8 rounded-2xl border border-slate-100 dark:border-white/5 shadow-sm hover:shadow-lg transition-all group">
+<div class="size-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">price_check</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Şeffaf Fiyatlandırma</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Piyasa koşullarına uygun, aracınızın gerçek değerinde ve şeffaf bir fiyat teklifi sunuyoruz.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-[#0c1817] py-20 overflow-hidden" id="nasil-calisir">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white leading-tight">Nasıl Çalışır?</h2>
+<p class="mt-4 text-gray-500 dark:text-gray-400 text-lg">4 adımda kolay ve hızlı satış süreci.</p>
+</div>
+<div class="relative">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 dark:bg-white/10 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative z-10">
+<div class="flex flex-col items-center text-center">
+<div class="size-20 rounded-full bg-white dark:bg-[#1a2c2b] border-4 border-primary text-secondary dark:text-white flex items-center justify-center shadow-lg mb-6 relative">
+<span class="material-symbols-outlined text-4xl">perm_phone_msg</span>
+<div class="absolute -top-2 -right-2 size-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">1</div>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-2">İletişim</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">WhatsApp veya telefon üzerinden bize ulaşın, aracınızın bilgilerini paylaşın.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-20 rounded-full bg-white dark:bg-[#1a2c2b] border-4 border-primary text-secondary dark:text-white flex items-center justify-center shadow-lg mb-6 relative">
+<span class="material-symbols-outlined text-4xl">search</span>
+<div class="absolute -top-2 -right-2 size-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">2</div>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-2">Ön Değerleme</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Gönderdiğiniz bilgilere ve fotoğraflara göre size tahmini bir fiyat aralığı sunalım.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-20 rounded-full bg-white dark:bg-[#1a2c2b] border-4 border-primary text-secondary dark:text-white flex items-center justify-center shadow-lg mb-6 relative">
+<span class="material-symbols-outlined text-4xl">car_repair</span>
+<div class="absolute -top-2 -right-2 size-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">3</div>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-2">Ekspertiz</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Aracınızı yerinde inceleyelim, detaylı ekspertiz yaparak net fiyat teklifimizi verelim.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-20 rounded-full bg-white dark:bg-[#1a2c2b] border-4 border-primary text-secondary dark:text-white flex items-center justify-center shadow-lg mb-6 relative">
+<span class="material-symbols-outlined text-4xl">handshake</span>
+<div class="absolute -top-2 -right-2 size-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">4</div>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-2">Anında Ödeme</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Fiyatta anlaşalım, noter satışını yapıp paranızı anında hesabınıza yatıralım.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark py-20" id="araclar">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white leading-tight">Hangi Araçları Alıyoruz?</h2>
+<p class="mt-4 text-gray-500 dark:text-gray-400 text-lg">Marka ve model fark etmeksizin her türlü hasarlı araca talibiz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group bg-white dark:bg-[#1a2c2b] rounded-2xl p-6 border border-slate-100 dark:border-white/5 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-lg bg-red-100 text-red-600 flex items-center justify-center">
+<span class="material-symbols-outlined">no_crash</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white">Pert Araçlar</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-6 flex-grow">Sigorta şirketi tarafından pert kararı verilmiş araçlarınızı değerinde alıyoruz.</p>
+<a class="w-full mt-auto py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-center transition-colors text-sm" href="#">Fiyat Teklifi Al</a>
+</div>
+<div class="group bg-white dark:bg-[#1a2c2b] rounded-2xl p-6 border border-slate-100 dark:border-white/5 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+<span class="material-symbols-outlined">car_crash</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white">Ağır Hasarlı</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-6 flex-grow">Büyük kazalara karışmış, onarımı masraflı ağır hasarlı araçlarınız alınır.</p>
+<a class="w-full mt-auto py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-center transition-colors text-sm" href="#">Fiyat Teklifi Al</a>
+</div>
+<div class="group bg-white dark:bg-[#1a2c2b] rounded-2xl p-6 border border-slate-100 dark:border-white/5 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-lg bg-yellow-100 text-yellow-600 flex items-center justify-center">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white">Motor Arızalı</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-6 flex-grow">Motoru yanmış, yatak sarmış veya mekanik arızası olan araçları satın alıyoruz.</p>
+<a class="w-full mt-auto py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-center transition-colors text-sm" href="#">Fiyat Teklifi Al</a>
+</div>
+<div class="group bg-white dark:bg-[#1a2c2b] rounded-2xl p-6 border border-slate-100 dark:border-white/5 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
+<span class="material-symbols-outlined">description</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white">Çekme Belgeli</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-6 flex-grow">Trafikten çekme belgesi alınmış araçlarınız için en iyi fiyatı veriyoruz.</p>
+<a class="w-full mt-auto py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-center transition-colors text-sm" href="#">Fiyat Teklifi Al</a>
+</div>
+<div class="group bg-white dark:bg-[#1a2c2b] rounded-2xl p-6 border border-slate-100 dark:border-white/5 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-lg bg-stone-100 text-stone-600 flex items-center justify-center">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white">Hurda Araçlar</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-6 flex-grow">Kullanılamaz durumdaki hurda araçlarınızı geri dönüşüme kazandırmak için alıyoruz.</p>
+<a class="w-full mt-auto py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-center transition-colors text-sm" href="#">Fiyat Teklifi Al</a>
+</div>
+<div class="group bg-white dark:bg-[#1a2c2b] rounded-2xl p-6 border border-slate-100 dark:border-white/5 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<h3 class="text-xl font-bold text-secondary dark:text-white">Hasarlı Ticari</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-6 flex-grow">Panelvan, kamyonet, minibüs gibi hasarlı ticari araçlarınızı filonuzdan alıyoruz.</p>
+<a class="w-full mt-auto py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-center transition-colors text-sm" href="#">Fiyat Teklifi Al</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-[#0c1817] py-20" id="sss">
+<div class="max-w-4xl mx-auto px-4 md:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white leading-tight">Sık Sorulan Sorular</h2>
+<p class="mt-4 text-gray-500 dark:text-gray-400 text-lg">Aklınıza takılan tüm soruların cevapları burada.</p>
+</div>
+<div class="space-y-4">
+<details class="group bg-white dark:bg-[#1a2c2b] rounded-xl border border-slate-200 dark:border-white/5 overflow-hidden transition-all duration-300">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-lg font-bold text-secondary dark:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                            Aracımın ödemesini ne zaman alırım?
+                            <span class="ml-4 flex-shrink-0 rounded-full bg-primary/10 p-2 text-primary transition-all duration-300 group-open:rotate-180 group-open:bg-primary group-open:text-white">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed border-t border-slate-100 dark:border-white/5 pt-4">
+                            Ödemeniz, noter satışı gerçekleştiği anda eş zamanlı olarak banka hesabınıza havale/EFT ile veya talep ederseniz elden nakit olarak yapılır. Paranız hesabınıza geçmeden satış işlemi tamamlanmaz.
+                        </div>
+</details>
+<details class="group bg-white dark:bg-[#1a2c2b] rounded-xl border border-slate-200 dark:border-white/5 overflow-hidden transition-all duration-300">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-lg font-bold text-secondary dark:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                            Çekici ücreti ödeyecek miyim?
+                            <span class="ml-4 flex-shrink-0 rounded-full bg-primary/10 p-2 text-primary transition-all duration-300 group-open:rotate-180 group-open:bg-primary group-open:text-white">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed border-t border-slate-100 dark:border-white/5 pt-4">
+                            Hayır, kesinlikle çekici ücreti ödemezsiniz. Aracınızın durumu ne olursa olsun (yürür veya yürümez), Türkiye'nin neresinde olursanız olun çekici hizmetimiz tamamen ücretsizdir.
+                        </div>
+</details>
+<details class="group bg-white dark:bg-[#1a2c2b] rounded-xl border border-slate-200 dark:border-white/5 overflow-hidden transition-all duration-300">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-lg font-bold text-secondary dark:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                            Rehinli veya hacizli araç alıyor musunuz?
+                            <span class="ml-4 flex-shrink-0 rounded-full bg-primary/10 p-2 text-primary transition-all duration-300 group-open:rotate-180 group-open:bg-primary group-open:text-white">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed border-t border-slate-100 dark:border-white/5 pt-4">
+                            Evet, rehinli veya üzerinde haciz bulunan araçların borçlarını kapatarak satın alma işlemi gerçekleştirebiliyoruz. Detaylı bilgi için uzman ekibimizle görüşebilirsiniz.
+                        </div>
+</details>
+<details class="group bg-white dark:bg-[#1a2c2b] rounded-xl border border-slate-200 dark:border-white/5 overflow-hidden transition-all duration-300">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-lg font-bold text-secondary dark:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                            Fiyat teklifi almak ücretli mi?
+                            <span class="ml-4 flex-shrink-0 rounded-full bg-primary/10 p-2 text-primary transition-all duration-300 group-open:rotate-180 group-open:bg-primary group-open:text-white">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="px-6 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed border-t border-slate-100 dark:border-white/5 pt-4">
+                            Ekspertiz ve fiyat teklifi hizmetimiz tamamen ücretsizdir. Aracınız için fiyat aldıktan sonra satıp satmama konusunda tamamen özgürsünüz.
+                        </div>
+</details>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-secondary text-white py-12 border-t border-white/10">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="size-8 bg-primary/20 rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">car_crash</span>
+</div>
+<span class="text-xl font-bold">Hasarlı Araç Alım</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Türkiye'nin her yerinden hasarlı, kazalı, pert ve hurda araçlarınızı değerinde nakit olarak satın alıyoruz.
+                    </p>
+<div class="flex gap-4">
+<a class="size-8 rounded bg-white/10 hover:bg-primary flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+<a class="size-8 rounded bg-white/10 hover:bg-primary flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Hızlı Bağlantılar</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#nasil-calisir">Nasıl Çalışır?</a></li>
+<li><a class="hover:text-primary transition-colors" href="#araclar">Hangi Araçlar?</a></li>
+<li><a class="hover:text-primary transition-colors" href="#neden-biz">Neden Biz?</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sss">Sık Sorulan Sorular</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Hizmet Bölgeleri</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">İstanbul Hasarlı Araç Alımı</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ankara Hasarlı Araç Alımı</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">İzmir Hasarlı Araç Alımı</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Bursa Hasarlı Araç Alımı</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">İletişim</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+<span>Otoport Galericiler Sitesi<br/>Esenyurt / İSTANBUL</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="text-white font-bold text-lg">0555 123 45 67</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>info@hasarliaracalim.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center text-sm text-gray-500">
+<p>© 2024 Hasarlı Araç Alım Merkezi. Tüm hakları saklıdır.</p>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4 items-end group">
+<div class="bg-white dark:bg-gray-800 text-secondary dark:text-white px-4 py-3 rounded-xl shadow-xl border border-slate-100 dark:border-white/10 mb-2 animate-bounce origin-bottom relative max-w-[200px]">
+<div class="font-bold text-sm">Online Teklif Alın!</div>
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Fotoğraf gönder, fiyat al.</div>
+<div class="absolute -bottom-2 right-6 w-4 h-4 bg-white dark:bg-gray-800 transform rotate-45 border-b border-r border-slate-100 dark:border-white/10"></div>
+</div>
+<button class="flex items-center justify-center size-16 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-2xl shadow-green-500/40 transition-all hover:scale-110 cursor-pointer relative">
+<span class="material-symbols-outlined text-[36px]">chat</span>
+<span class="absolute top-0 right-0 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-red-600 border-2 border-white"></span>
+</span>
+</button>
+</div>
+</div>
+
+</body></html>

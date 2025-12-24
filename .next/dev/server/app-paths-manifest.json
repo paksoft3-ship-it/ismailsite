@@ -1,0 +1,8 @@
+{
+  "/blog/page": "app/blog/page.js",
+  "/hakkimizda/page": "app/hakkimizda/page.js",
+  "/hizmetler/[slug]/page": "app/hizmetler/[slug]/page.js",
+  "/iletisim/page": "app/iletisim/page.js",
+  "/page": "app/page.js",
+  "/sehirler/[slug]/page": "app/sehirler/[slug]/page.js"
+}

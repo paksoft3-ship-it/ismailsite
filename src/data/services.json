@@ -1,0 +1,252 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "slug": "hasarli-arac-alim-satim",
+      "title": "Hasarlı Araç Alım Satım",
+      "shortTitle": "Hasarlı Araç",
+      "icon": "car_crash",
+      "iconColor": "orange",
+      "description": "Her türlü hasarlı aracınızı en iyi fiyatla satın alıyoruz.",
+      "metaTitle": "Hasarlı Araç Alım Satım | En İyi Fiyat Garantisi",
+      "metaDescription": "Hasarlı aracınızı değerinde nakit olarak satın alıyoruz. 7/24 hizmet, ücretsiz çekici, aynı gün ödeme. Hemen fiyat teklifi alın!",
+      "heroTitle": "Hasarlı Araç Alım Satım",
+      "heroSubtitle": "Aracınızın hasar durumu ne olursa olsun, değerinde nakit olarak satın alıyoruz. Güvenli işlem, hızlı ödeme ve yerinden teslim alma avantajlarıyla.",
+      "heroImage": "/images/backgrounds/hasarli-hero.png",
+      "content": {
+        "intro": "Hasarlı araç alım satımında Türkiye'nin en güvenilir adresi olarak, her marka ve model aracınızı değerinde satın alıyoruz. Küçük çiziklerden ağır hasarlara kadar her türlü durumda aracınız için en iyi fiyatı sunuyoruz.",
+        "details": [
+          "Kaporta hasarlı araçlar",
+          "Boyalı araçlar",
+          "Çarpışma hasarlı araçlar",
+          "Sel hasarlı araçlar",
+          "Dolu hasarlı araçlar",
+          "Yangın hasarlı araçlar"
+        ],
+        "benefits": [
+          "Piyasanın üzerinde fiyat teklifi",
+          "Aynı gün nakit ödeme",
+          "Ücretsiz ekspertiz hizmeti",
+          "Türkiye geneli hizmet"
+        ]
+      },
+      "faq": [
+        {
+          "question": "Hasarlı aracımı nasıl satarım?",
+          "answer": "WhatsApp veya telefon üzerinden bizimle iletişime geçin, aracınızın fotoğraflarını gönderin. Size hemen fiyat teklifi sunalım ve anlaşma sağlanırsa aynı gün işlemi tamamlayalım."
+        },
+        {
+          "question": "Hangi hasarlı araçları alıyorsunuz?",
+          "answer": "Kaporta hasarı, boya hasarı, çarpışma hasarı, sel hasarı, dolu hasarı ve yangın hasarı olan tüm araçları satın alıyoruz."
+        },
+        {
+          "question": "Ödeme nasıl yapılıyor?",
+          "answer": "Noter satışı anında banka havale/EFT veya nakit olarak ödeme yapıyoruz. Tercih size ait."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "kazali-arac-alim-satim",
+      "title": "Kazalı Araç Alım Satım",
+      "shortTitle": "Kazalı Araç",
+      "icon": "minor_crash",
+      "iconColor": "red",
+      "description": "Kaza yapmış araçlarınızı değerinde satın alıyoruz.",
+      "metaTitle": "Kazalı Araç Alım Satım | Anında Nakit Ödeme",
+      "metaDescription": "Kazalı aracınızı en iyi fiyatla satın alıyoruz. Ağır veya hafif kazalı fark etmez. Ücretsiz çekici, aynı gün ödeme. Hemen arayın!",
+      "heroTitle": "Kazalı Araç Alım Satım",
+      "heroSubtitle": "Trafik kazası geçirmiş aracınızı hasar durumuna bakılmaksızın değerinde satın alıyoruz. Hızlı ve güvenli satış süreci.",
+      "heroImage": "/images/backgrounds/kazali-hero.png",
+      "content": {
+        "intro": "Trafik kazası sonucu hasar görmüş araçlarınızı satın alıyoruz. Hafif çarpışmalardan ağır hasarlara kadar her türlü kazalı aracınız için en iyi fiyatı sunuyoruz.",
+        "details": [
+          "Hafif çarpışmalı araçlar",
+          "Ağır kazalı araçlar",
+          "Ön darbe hasarlı araçlar",
+          "Arka darbe hasarlı araçlar",
+          "Yan çarpışmalı araçlar",
+          "Takla atmış araçlar"
+        ],
+        "benefits": [
+          "Kaza raporlu araçlara özel fiyat",
+          "7/24 ekspertiz hizmeti",
+          "Sigorta işlemlerinde destek",
+          "Türkiye'nin her yerinden alım"
+        ]
+      },
+      "faq": [
+        {
+          "question": "Ağır kazalı araç alıyor musunuz?",
+          "answer": "Evet, hasar durumu ne olursa olsun tüm kazalı araçları satın alıyoruz. Ağır hasarlı araçlar için de rekabetçi fiyat sunuyoruz."
+        },
+        {
+          "question": "Kaza raporlu araç satılabilir mi?",
+          "answer": "Evet, tramer kaydı bulunan veya kaza raporu olan araçları da satın alıyoruz. Bu durum fiyatı etkiler ancak satış mümkündür."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "hurda-arac-alim-satim",
+      "title": "Hurda Araç Alım Satım",
+      "shortTitle": "Hurda Araç",
+      "icon": "recycling",
+      "iconColor": "stone",
+      "description": "Hurda araçlarınızı geri dönüşüme kazandırıyoruz.",
+      "metaTitle": "Hurda Araç Alım Satım | Yüksek Fiyat Garantisi",
+      "metaDescription": "Hurda aracınızı en yüksek fiyatla satın alıyoruz. Yasal prosedürler, ücretsiz çekici, anında ödeme. Hurda araç satmak için arayın!",
+      "heroTitle": "Hurda Araç Alım Satım",
+      "heroSubtitle": "Ekonomik ömrünü tamamlamış, kullanılamaz durumdaki hurda araçlarınızı değerinde satın alıp geri dönüşüme kazandırıyoruz.",
+      "heroImage": "/images/backgrounds/hurda-hero.png",
+      "content": {
+        "intro": "Hurda araç alımında yasal prosedürlere uygun şekilde işlem yapıyoruz. Araçlarınızı çevre dostu yöntemlerle geri dönüşüme kazandırırken size en iyi fiyatı sunuyoruz.",
+        "details": [
+          "Ekonomik ömrünü tamamlamış araçlar",
+          "Uzun süredir çalışmayan araçlar",
+          "Onarımı ekonomik olmayan araçlar",
+          "Parça parça satılamayan araçlar",
+          "Ağır hasarlı eski model araçlar"
+        ],
+        "benefits": [
+          "Yasal hurda işlemleri",
+          "Çevre dostu geri dönüşüm",
+          "Hurda belgesi düzenleme",
+          "Vergi borcu olan araçlarda çözüm"
+        ]
+      },
+      "faq": [
+        {
+          "question": "Hurda araç nasıl satılır?",
+          "answer": "Hurda aracınızın fotoğraflarını gönderin, fiyat teklifi alalım. Anlaşma sağlanırsa çekicimizi gönderip aracı alalım ve noter işlemlerini tamamlayalım."
+        },
+        {
+          "question": "Hurda belgesi ne işe yarar?",
+          "answer": "Hurda belgesi, aracın trafikten düşürüldüğünü ve yasal olarak bertaraf edildiğini belgeler. MTV ve sigorta yükümlülüklerinden kurtulmanızı sağlar."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "pert-arac-alim-satim",
+      "title": "Pert Araç Alım Satım",
+      "shortTitle": "Pert Araç",
+      "icon": "no_crash",
+      "iconColor": "red",
+      "description": "Sigorta şirketi pert kararı vermiş araçları alıyoruz.",
+      "metaTitle": "Pert Araç Alım Satım | Sigorta Pert Araç Fiyatları",
+      "metaDescription": "Pert araçınızı değerinde satın alıyoruz. Ağır hasar, pert-total fark etmez. Sigorta işlemlerinde destek, ücretsiz çekici. Hemen arayın!",
+      "heroTitle": "Pert Araç Alım Satım",
+      "heroSubtitle": "Sigorta şirketi tarafından pert kararı verilmiş araçlarınızı değerinde satın alıyoruz. Pert-total ve pert-parça araçlara özel fiyat.",
+      "heroImage": "/images/backgrounds/pert-hero.png",
+      "content": {
+        "intro": "Sigorta şirketleri tarafından pert kararı verilen araçları satın alıyoruz. Pert-total veya pert-parça fark etmeksizin aracınız için en iyi fiyatı sunuyoruz.",
+        "details": [
+          "Pert-total araçlar",
+          "Pert-parça araçlar",
+          "Ağır hasarlı pert araçlar",
+          "Sel nedeniyle pert araçlar",
+          "Yangın nedeniyle pert araçlar",
+          "Hırsızlık sonucu bulunan pert araçlar"
+        ],
+        "benefits": [
+          "Pert raporu olan araçlara özel değerleme",
+          "Sigorta şirketi ile koordinasyon",
+          "Pert kaydı çıkarma desteği",
+          "Hızlı ve güvenli işlem"
+        ]
+      },
+      "faq": [
+        {
+          "question": "Pert araç nedir?",
+          "answer": "Pert araç, sigorta şirketi tarafından onarım masrafı aracın değerinin belirli bir yüzdesini geçtiği için ekonomik olarak onarılmaya değmez bulunan araçtır."
+        },
+        {
+          "question": "Pert araç satılabilir mi?",
+          "answer": "Evet, pert kaydı olan araçlar satılabilir. Biz bu araçları değerinde satın alıyoruz ve gerekli işlemlerde size destek sağlıyoruz."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "motor-arizali-arac-alim-satim",
+      "title": "Motor Arızalı Araç Alım Satım",
+      "shortTitle": "Motor Arızalı",
+      "icon": "engineering",
+      "iconColor": "yellow",
+      "description": "Motor arızalı araçlarınızı değerinde satın alıyoruz.",
+      "metaTitle": "Motor Arızalı Araç Alım Satım | Motor Yanmış Araç Fiyatı",
+      "metaDescription": "Motor arızalı, motoru yanmış veya yatak sarmış aracınızı satın alıyoruz. Ücretsiz çekici, aynı gün ödeme. Fiyat teklifi için arayın!",
+      "heroTitle": "Motor Arızalı Araç Alım Satım",
+      "heroSubtitle": "Motoru yanmış, yatak sarmış veya mekanik arızası olan araçlarınızı değerinde satın alıyoruz.",
+      "heroImage": "/images/backgrounds/motor-hero.png",
+      "content": {
+        "intro": "Motor arızası olan araçları satın alıyoruz. Onarım masrafı yüksek olan motor problemli araçlarınız için rekabetçi fiyat sunuyoruz.",
+        "details": [
+          "Motoru yanmış araçlar",
+          "Yatak sarmış araçlar",
+          "Silindir kapağı hasarlı araçlar",
+          "Krank mili hasarlı araçlar",
+          "Turbo arızalı araçlar",
+          "Şanzıman arızalı araçlar"
+        ],
+        "benefits": [
+          "Motor hasarına özel değerleme",
+          "Yürümeyen araçlara ücretsiz çekici",
+          "Parça değeri üzerinden fiyat",
+          "Hızlı ekspertiz ve ödeme"
+        ]
+      },
+      "faq": [
+        {
+          "question": "Motoru yanmış araç satılır mı?",
+          "answer": "Evet, motoru yanmış araçları satın alıyoruz. Aracın diğer parçaları ve genel durumu değerlendirilerek size en iyi fiyat sunulur."
+        },
+        {
+          "question": "Araç yürümüyor, nasıl teslim ederim?",
+          "answer": "Ücretsiz çekici hizmetimizle aracınızı bulunduğu adresten alıyoruz. Türkiye'nin her yerinden çekici gönderiyoruz."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "cekme-belgeli-arac-alim-satim",
+      "title": "Çekme Belgeli Araç Alım Satım",
+      "shortTitle": "Çekme Belgeli",
+      "icon": "description",
+      "iconColor": "gray",
+      "description": "Trafikten çekme belgeli araçlarınızı satın alıyoruz.",
+      "metaTitle": "Çekme Belgeli Araç Alım Satım | Trafikten Men Araç",
+      "metaDescription": "Çekme belgeli aracınızı değerinde satın alıyoruz. Trafikten men edilmiş araçlara en iyi fiyat. Hemen fiyat teklifi alın!",
+      "heroTitle": "Çekme Belgeli Araç Alım Satım",
+      "heroSubtitle": "Trafikten çekme belgesi almış veya men edilmiş araçlarınızı değerinde satın alıyoruz.",
+      "heroImage": "/images/backgrounds/cekme-hero.png",
+      "content": {
+        "intro": "Trafikten çekilmiş veya çekme belgesi düzenlenmiş araçları satın alıyoruz. Yasal süreçlerde size destek sağlıyoruz.",
+        "details": [
+          "Trafikten çekme belgeli araçlar",
+          "Muayene geçmeyen araçlar",
+          "Vergi borcu nedeniyle yakalama olan araçlar",
+          "Egzoz emisyon geçmeyen araçlar",
+          "Teknik uyumsuz araçlar"
+        ],
+        "benefits": [
+          "Çekme belgeli araçlara özel fiyat",
+          "Yasal süreçlerde danışmanlık",
+          "Vergi borcu çözümü",
+          "Hızlı ve sorunsuz işlem"
+        ]
+      },
+      "faq": [
+        {
+          "question": "Çekme belgeli araç satılabilir mi?",
+          "answer": "Evet, çekme belgeli araçlar noter satışı ile satılabilir. Biz bu araçları değerinde satın alıyoruz."
+        },
+        {
+          "question": "Vergi borcu olan araç satılır mı?",
+          "answer": "Vergi borcu olan araçları da satın alıyoruz. Borç kapatılarak veya düzenlenerek satış işlemi gerçekleştirilebilir."
+        }
+      ]
+    }
+  ]
+}

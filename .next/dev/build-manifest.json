@@ -1,0 +1,25 @@
+{
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/31f94_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_ssgManifest.js",
+    "static/development/_buildManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2ef320b2._.js",
+    "static/chunks/31f94_next_dist_compiled_react-dom_2a113a2c._.js",
+    "static/chunks/31f94_next_dist_compiled_react-server-dom-turbopack_6e0f21d6._.js",
+    "static/chunks/31f94_next_dist_compiled_next-devtools_index_21ac7357.js",
+    "static/chunks/31f94_next_dist_compiled_6b9138bf._.js",
+    "static/chunks/31f94_next_dist_client_8ceedbc7._.js",
+    "static/chunks/31f94_next_dist_4180f34b._.js",
+    "static/chunks/31f94_@swc_helpers_cjs_94aa8cb3._.js",
+    "static/chunks/ismail_a0ff3932._.js",
+    "static/chunks/turbopack-ismail_5d564b9e._.js"
+  ]
+}

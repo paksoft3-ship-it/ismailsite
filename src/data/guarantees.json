@@ -1,0 +1,96 @@
+{
+  "guarantees": [
+    {
+      "id": 1,
+      "title": "En İyi Fiyat Garantisi",
+      "description": "Piyasadaki en yüksek teklifi veriyoruz. Daha iyi bir teklif bulursanız, üzerine çıkıyoruz.",
+      "icon": "workspace_premium"
+    },
+    {
+      "id": 2,
+      "title": "Aynı Gün Nakit Ödeme",
+      "description": "Anlaşma sağlandığında ödemenizi aynı gün nakit veya havale olarak yapıyoruz.",
+      "icon": "payments"
+    },
+    {
+      "id": 3,
+      "title": "Ücretsiz Çekici Hizmeti",
+      "description": "Aracınız çalışmıyor olsa bile, bulunduğunuz yerden ücretsiz çekici ile alıyoruz.",
+      "icon": "local_shipping"
+    },
+    {
+      "id": 4,
+      "title": "Güvenli Resmi İşlem",
+      "description": "Tüm alım satım işlemleri noter onaylı ve resmi prosedürlere uygun yapılır.",
+      "icon": "verified_user"
+    },
+    {
+      "id": 5,
+      "title": "7/24 Hizmet",
+      "description": "Hafta sonu dahil her gün, günün her saati size hizmet vermeye hazırız.",
+      "icon": "schedule"
+    },
+    {
+      "id": 6,
+      "title": "Türkiye Geneli Hizmet",
+      "description": "81 ilde hizmet veriyoruz. Nerede olursanız olun, size ulaşıyoruz.",
+      "icon": "location_on"
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "value": 10000,
+      "suffix": "+",
+      "label": "Mutlu Müşteri",
+      "icon": "groups"
+    },
+    {
+      "id": 2,
+      "value": 15000,
+      "suffix": "+",
+      "label": "Alınan Araç",
+      "icon": "directions_car"
+    },
+    {
+      "id": 3,
+      "value": 81,
+      "suffix": "",
+      "label": "İl Kapsama",
+      "icon": "map"
+    },
+    {
+      "id": 4,
+      "value": 15,
+      "suffix": "+",
+      "label": "Yıllık Tecrübe",
+      "icon": "emoji_events"
+    }
+  ],
+  "brands": [
+    { "name": "BMW", "logo": "/images/brands/bmw.svg" },
+    { "name": "Mercedes", "logo": "/images/brands/mercedes.svg" },
+    { "name": "Audi", "logo": "/images/brands/audi.svg" },
+    { "name": "Volkswagen", "logo": "/images/brands/volkswagen.svg" },
+    { "name": "Toyota", "logo": "/images/brands/toyota.svg" },
+    { "name": "Honda", "logo": "/images/brands/honda.svg" },
+    { "name": "Ford", "logo": "/images/brands/ford.svg" },
+    { "name": "Renault", "logo": "/images/brands/renault.svg" },
+    { "name": "Fiat", "logo": "/images/brands/fiat.svg" },
+    { "name": "Hyundai", "logo": "/images/brands/hyundai.svg" },
+    { "name": "Peugeot", "logo": "/images/brands/peugeot.svg" },
+    { "name": "Opel", "logo": "/images/brands/opel.svg" },
+    { "name": "Nissan", "logo": "/images/brands/nissan.svg" },
+    { "name": "Kia", "logo": "/images/brands/kia.svg" },
+    { "name": "Skoda", "logo": "/images/brands/skoda.svg" },
+    { "name": "Volvo", "logo": "/images/brands/volvo.svg" }
+  ],
+  "partners": [
+    { "name": "Türkiye Sigorta", "logo": "/images/partners/turkiye-sigorta.svg" },
+    { "name": "Axa Sigorta", "logo": "/images/partners/axa.svg" },
+    { "name": "Allianz", "logo": "/images/partners/allianz.svg" },
+    { "name": "Akbank", "logo": "/images/partners/akbank.svg" },
+    { "name": "İş Bankası", "logo": "/images/partners/isbank.svg" },
+    { "name": "Garanti BBVA", "logo": "/images/partners/garanti.svg" }
+  ]
+}

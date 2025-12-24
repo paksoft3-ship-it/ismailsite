@@ -1,0 +1,76 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "slug": "hasarli-arac-satisinda-dikkat-edilmesi-gerekenler",
+            "title": "Hasarlı Araç Satışında Dikkat Edilmesi Gerekenler",
+            "excerpt": "Hasarlı aracınızı satarken nelere dikkat etmelisiniz? Doğru fiyat belirleme, evrak işlemleri ve güvenilir alıcı bulma hakkında bilmeniz gereken her şey.",
+            "content": "Hasarlı araç satışı, standart araç satışından farklı dinamiklere sahiptir. Bu yazımızda, hasarlı aracınızı en iyi fiyata ve güvenli bir şekilde satmanız için bilmeniz gereken tüm detayları ele alıyoruz.\n\n## Hasar Kaydının Önemi\n\nAracınızın hasar kaydı, satış fiyatını doğrudan etkileyen en önemli faktörlerden biridir. Tramer sorgulaması yaparak aracınızın tüm hasar geçmişini öğrenebilirsiniz.\n\n## Doğru Fiyat Belirleme\n\nHasarlı araç fiyatlandırması yaparken:\n- Hasarın boyutunu değerlendirin\n- Piyasa fiyatlarını araştırın\n- Onarım maliyetini hesaplayın\n- Profesyonel ekspertiz yaptırın\n\n## Evrak İşlemleri\n\nSatış için gerekli belgeler:\n- Araç ruhsatı\n- Kimlik fotokopisi\n- Tramer raporu\n- Ekspertiz raporu (varsa)\n\n## Güvenilir Alıcı Seçimi\n\nHasarlı araç alım satımında güvenilir firmalarla çalışmak büyük önem taşır. Lisanslı ve referanslı firmalar tercih edilmelidir.",
+            "author": "Hasarlı Araç Alım Merkezi",
+            "date": "2024-12-20",
+            "category": "Rehber",
+            "image": "/images/backgrounds/hasarli-hero.png",
+            "readTime": "5 dk"
+        },
+        {
+            "id": 2,
+            "slug": "pert-arac-nedir-nasil-sorgulama-yapilir",
+            "title": "Pert Araç Nedir? Nasıl Sorgulama Yapılır?",
+            "excerpt": "Pert araç kavramı, pert total ve pert ağır arasındaki farklar, sorgulama yöntemleri ve pert araç satışı hakkında detaylı bilgi.",
+            "content": "Pert araç, sigorta şirketleri tarafından hasarı onarım maliyetinden yüksek bulunan ve ekonomik olarak toplam kayıp sayılan araçlara verilen isimdir.\n\n## Pert Türleri\n\n### Pert Total\nAracın hasarı, piyasa değerinin %70'ini aştığında pert total ilan edilir. Bu durumda araç trafikten çekilir ve hurda belgesi verilir.\n\n### Pert Ağır\nHasar oranı %50-70 arasında olan araçlar pert ağır kategorisindedir. Bu araçlar onarılabilir ancak değer kaybı yaşar.\n\n## Pert Sorgulama\n\nAracın pert kaydını sorgulamak için:\n1. Tramer web sitesini ziyaret edin\n2. Plaka ve ruhsat seri numarasını girin\n3. Ödeme yaparak raporu görüntüleyin\n\n## Pert Araç Satışı\n\nPert araç satışında şeffaflık esastır. Alıcıya tüm bilgiler açıkça aktarılmalıdır.",
+            "author": "Hasarlı Araç Alım Merkezi",
+            "date": "2024-12-18",
+            "category": "Bilgilendirme",
+            "image": "/images/backgrounds/pert-hero.png",
+            "readTime": "4 dk"
+        },
+        {
+            "id": 3,
+            "slug": "kazali-arac-degeri-nasil-hesaplanir",
+            "title": "Kazalı Araç Değeri Nasıl Hesaplanır?",
+            "excerpt": "Kazalı aracınızın gerçek değerini öğrenin. Değer kaybı hesaplama yöntemleri ve fiyatı etkileyen faktörler hakkında kapsamlı rehber.",
+            "content": "Kazalı araç değerlemesi, birçok faktörün bir arada değerlendirilmesini gerektiren karmaşık bir süreçtir.\n\n## Değeri Etkileyen Faktörler\n\n### Hasarın Boyutu\n- Hafif hasar (çizik, küçük ezik)\n- Orta hasar (panel değişimi)\n- Ağır hasar (şasi hasarı, airbag patlaması)\n\n### Aracın Yaşı ve Kilometresi\nEski ve yüksek kilometreli araçlarda hasar oranı değer kaybını daha az etkiler.\n\n### Marka ve Model\nPremium segment araçlarda değer kaybı oransal olarak daha yüksek olabilir.\n\n## Değer Kaybı Hesaplama\n\nGenel formül:\nDeğer Kaybı = (Hasarsız Değer - Onarım Sonrası Değer)\n\nOrtalama değer kaybı oranları:\n- Hafif hasar: %5-15\n- Orta hasar: %15-30\n- Ağır hasar: %30-50+\n\n## Profesyonel Değerleme\n\nEn doğru sonuç için profesyonel ekspertiz hizmeti almanızı öneririz.",
+            "author": "Hasarlı Araç Alım Merkezi",
+            "date": "2024-12-15",
+            "category": "Rehber",
+            "image": "/images/backgrounds/kazali-hero.png",
+            "readTime": "6 dk"
+        },
+        {
+            "id": 4,
+            "slug": "hurda-arac-satis-islemleri",
+            "title": "Hurda Araç Satış İşlemleri: Adım Adım Rehber",
+            "excerpt": "Hurda aracınızı nasıl satabilirsiniz? Gerekli belgeler, resmi işlemler ve hurda araç teslimi hakkında bilmeniz gereken her şey.",
+            "content": "Hurda araç satışı, belirli yasal prosedürlerin takip edilmesini gerektiren resmi bir işlemdir.\n\n## Hurda Araç Nedir?\n\nTrafikten çekilmiş, kullanılamaz durumda olan veya ekonomik ömrünü tamamlamış araçlara hurda araç denir.\n\n## Satış İçin Gerekli Belgeler\n\n1. Araç ruhsatı (aslı)\n2. Nüfus cüzdanı fotokopisi\n3. Hurda belgesi (pert total araçlar için)\n4. Vekaletname (vekil ile işlem yapılacaksa)\n\n## Satış Süreci\n\n### Adım 1: Değerleme\nAracınızın hurda değerini öğrenin. Metal ağırlığı ve parça durumu fiyatı belirler.\n\n### Adım 2: Anlaşma\nGüvenilir bir hurda alıcısı ile anlaşın.\n\n### Adım 3: Evrak İşlemleri\nNoterde veya online olarak devir işlemini tamamlayın.\n\n### Adım 4: Teslimat\nAraç, çekici ile alınır ve ödeme yapılır.\n\n## Dikkat Edilmesi Gerekenler\n\n- Lisanslı hurda firmalarını tercih edin\n- Ödemeyi araç tesliminde alın\n- Devir işlemini mutlaka tamamlayın",
+            "author": "Hasarlı Araç Alım Merkezi",
+            "date": "2024-12-12",
+            "category": "Rehber",
+            "image": "/images/backgrounds/hurda-hero.png",
+            "readTime": "5 dk"
+        },
+        {
+            "id": 5,
+            "slug": "sigorta-hasar-sureci-nasil-isler",
+            "title": "Sigorta Hasar Süreci Nasıl İşler?",
+            "excerpt": "Kaza sonrası sigorta hasar sürecinin tüm aşamaları. Başvurudan tazminata kadar bilmeniz gereken her şey.",
+            "content": "Trafik kazası sonrasında sigorta hasar süreci, doğru yönetildiğinde hak kayıplarını önler.\n\n## Kaza Anında Yapılması Gerekenler\n\n1. Olay yerini güvenceye alın\n2. Yaralı varsa 112'yi arayın\n3. Kaza tespit tutanağı doldurun\n4. Fotoğraf çekin\n5. Tanık bilgilerini alın\n\n## Sigorta Başvurusu\n\n### Zorunlu Trafik Sigortası\nKarşı tarafın hasarını karşılar. Başvuru karşı tarafın sigortasına yapılır.\n\n### Kasko Sigortası\nKendi hasarınızı karşılar. Kendi sigorta şirketinize başvurun.\n\n## Hasar Ekspertizi\n\nSigorta şirketi, hasarı değerlendirmek için eksper görevlendirir. Eksper raporu, ödenecek tazminatı belirler.\n\n## Tazminat Ödemesi\n\nHasar onaylandıktan sonra:\n- Onarım masrafları karşılanır veya\n- Pert durumunda piyasa değeri ödenir\n\n## Anlaşmazlık Durumunda\n\nSigorta Tahkim Komisyonu'na başvurabilirsiniz.",
+            "author": "Hasarlı Araç Alım Merkezi",
+            "date": "2024-12-10",
+            "category": "Bilgilendirme",
+            "image": "/images/backgrounds/services-hero.png",
+            "readTime": "7 dk"
+        },
+        {
+            "id": 6,
+            "slug": "tramer-sorgulama-nasil-yapilir",
+            "title": "Tramer Sorgulama Nasıl Yapılır? Ne Anlama Gelir?",
+            "excerpt": "Tramer kaydı nedir, nasıl sorgulanır? Araç alırken tramer raporunun önemi ve dikkat edilmesi gereken noktalar.",
+            "content": "Tramer, araçların hasar geçmişini tutan resmi veri tabanıdır. İkinci el araç alırken mutlaka sorgulanmalıdır.\n\n## Tramer Nedir?\n\nTramer (Trafik Sigortaları Bilgi Merkezi), sigorta şirketlerinin hasar bilgilerini paylaştığı merkezi sistemdir.\n\n## Tramer Sorgulama Yöntemleri\n\n### Online Sorgulama\n1. www.tramer.org.tr adresine gidin\n2. Plaka ve ruhsat bilgilerini girin\n3. Ücretli raporu görüntüleyin\n\n### SMS ile Sorgulama\nTRAMER PLAKA yazıp 3340'a gönderin.\n\n## Tramer Raporunda Neler Var?\n\n- Toplam hasar tutarı\n- Hasar tarihleri\n- Hasar türleri\n- Pert kaydı (varsa)\n\n## Dikkat Edilmesi Gerekenler\n\n- Yüksek hasar tutarı uyarı işaretidir\n- Pert ağır/total kaydı araç değerini düşürür\n- Hasar geçmişi olmayan araç daha değerlidir\n\n## Sonuç\n\nAraç almadan önce mutlaka tramer sorgulaması yapın ve detaylı ekspertiz yaptırın.",
+            "author": "Hasarlı Araç Alım Merkezi",
+            "date": "2024-12-08",
+            "category": "Bilgilendirme",
+            "image": "/images/backgrounds/about-hero.png",
+            "readTime": "4 dk"
+        }
+    ]
+}

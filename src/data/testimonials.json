@@ -1,0 +1,64 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Ahmet Yılmaz",
+      "city": "İstanbul",
+      "vehicle": "2018 BMW 320i - Ağır Hasarlı",
+      "rating": 5,
+      "comment": "Kaza sonrası aracımı satmak için birçok yere başvurdum. En iyi fiyatı buradan aldım ve aynı gün ödeme yaptılar. Kesinlikle tavsiye ederim.",
+      "image": "/images/testimonials/customer-1.jpg",
+      "date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Fatma Demir",
+      "city": "Ankara",
+      "vehicle": "2019 Mercedes C180 - Pert",
+      "rating": 5,
+      "comment": "Pert olan aracım için sigorta şirketinden aldığım teklifin çok üzerinde bir fiyat verdiler. Profesyonel ve güvenilir bir ekip.",
+      "image": "/images/testimonials/customer-2.jpg",
+      "date": "2024-01-10"
+    },
+    {
+      "id": 3,
+      "name": "Mehmet Kaya",
+      "city": "İzmir",
+      "vehicle": "2017 Volkswagen Passat - Sel Hasarlı",
+      "rating": 5,
+      "comment": "Sel felaketinde zarar gören aracımı çok hızlı bir şekilde değerlendirdiler. Evime gelip aracı aldılar, paramı anında hesabıma yatırdılar.",
+      "image": "/images/testimonials/customer-3.jpg",
+      "date": "2024-01-05"
+    },
+    {
+      "id": 4,
+      "name": "Ayşe Çelik",
+      "city": "Bursa",
+      "vehicle": "2020 Audi A4 - Kazalı",
+      "rating": 5,
+      "comment": "WhatsApp üzerinden fotoğraf gönderdim, 30 dakika içinde teklif aldım. Ertesi gün araç alındı ve ödeme yapıldı. Mükemmel hizmet!",
+      "image": "/images/testimonials/customer-4.jpg",
+      "date": "2023-12-28"
+    },
+    {
+      "id": 5,
+      "name": "Mustafa Öztürk",
+      "city": "Antalya",
+      "vehicle": "2016 Ford Focus - Hurda",
+      "rating": 5,
+      "comment": "Hurda belgeli aracımı bile değerinde aldılar. Başka hiçbir yer bu kadar iyi fiyat vermedi. Teşekkürler!",
+      "image": "/images/testimonials/customer-5.jpg",
+      "date": "2023-12-20"
+    },
+    {
+      "id": 6,
+      "name": "Zeynep Arslan",
+      "city": "Konya",
+      "vehicle": "2021 Toyota Corolla - Yanmış",
+      "rating": 5,
+      "comment": "Yangında hasar gören aracım için umudumu kaybetmiştim. Buradan aldığım teklifle çok memnun kaldım. Güvenilir ve dürüst çalışıyorlar.",
+      "image": "/images/testimonials/customer-6.jpg",
+      "date": "2023-12-15"
+    }
+  ]
+}

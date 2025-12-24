@@ -1,0 +1,97 @@
+{
+  "name": "Hasarlı Araç Alım Merkezi",
+  "title": "Türkiye Geneli Hasarlı Araç Alımı - Nakit Ödeme",
+  "description": "Türkiye'nin her yerinden hasarlı, kazalı, pert ve hurda araçlarınızı değerinde nakit olarak satın alıyoruz. Güvenli işlem, hızlı ödeme ve yerinden teslim alma avantajlarıyla.",
+  "phone": "+90 507 071 65 13",
+  "phoneRaw": "+905070716513",
+  "whatsapp": "905070716513",
+  "email": "info@hasarliaracalim.com",
+  "address": "Otoport Galericiler Sitesi, Esenyurt / İSTANBUL",
+  "workingHours": "7/24 Hizmet",
+  "gaId": "G-XXXXXXXXXX",
+  "gtmId": "GTM-XXXXXXX",
+  "siteName": "Hasarlı Araç Alım Merkezi",
+  "siteTitle": "Türkiye Geneli Hasarlı Araç Alımı - Nakit Ödeme",
+  "siteDescription": "Türkiye'nin her yerinden hasarlı, kazalı, pert ve hurda araçlarınızı değerinde nakit olarak satın alıyoruz. Güvenli işlem, hızlı ödeme ve yerinden teslim alma avantajlarıyla.",
+  "contact": {
+    "phone": "+90 507 071 65 13",
+    "phoneRaw": "+905070716513",
+    "whatsapp": "905070716513",
+    "email": "info@hasarliaracalim.com",
+    "address": "Otoport Galericiler Sitesi, Esenyurt / İSTANBUL"
+  },
+  "social": {
+    "facebook": "https://facebook.com/hasarliaracalim",
+    "instagram": "https://instagram.com/hasarliaracalim",
+    "twitter": "https://twitter.com/hasarliaracalim",
+    "youtube": "https://youtube.com/hasarliaracalim"
+  },
+  "navigation": [
+    {
+      "title": "Ana Sayfa",
+      "href": "/"
+    },
+    {
+      "title": "Hizmetler",
+      "href": "/hizmetler",
+      "hasDropdown": true
+    },
+    {
+      "title": "Şehirler",
+      "href": "/sehirler",
+      "hasDropdown": true
+    },
+    {
+      "title": "Bilgiler",
+      "href": "/bilgiler"
+    },
+    {
+      "title": "Hakkımızda",
+      "href": "/hakkimizda"
+    },
+    {
+      "title": "İletişim",
+      "href": "/iletisim"
+    }
+  ],
+  "topBar": [
+    {
+      "icon": "schedule",
+      "text": "7/24 Hizmet"
+    },
+    {
+      "icon": "payments",
+      "text": "Aynı Gün Nakit"
+    },
+    {
+      "icon": "auto_towing",
+      "text": "Ücretsiz Çekici"
+    }
+  ],
+  "trustIndicators": [
+    {
+      "icon": "verified_user",
+      "text": "Güvenli İşlem"
+    },
+    {
+      "icon": "bolt",
+      "text": "Hızlı Ödeme"
+    },
+    {
+      "icon": "local_shipping",
+      "text": "Yerinden Alım"
+    }
+  ],
+  "googleAds": {
+    "conversionId": "AW-XXXXXXXXX",
+    "phoneConversionLabel": "XXXXXXXXX",
+    "whatsappConversionLabel": "XXXXXXXXX",
+    "formConversionLabel": "XXXXXXXXX"
+  },
+  "gtm": {
+    "containerId": "GTM-XXXXXXX"
+  },
+  "analytics": {
+    "measurementId": "G-XXXXXXXXXX"
+  }
+}

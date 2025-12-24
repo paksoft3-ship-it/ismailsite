@@ -1,0 +1,52 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "Aracımın ödemesini ne zaman alırım?",
+      "answer": "Ödemeniz, noter satışı gerçekleştiği anda eş zamanlı olarak banka hesabınıza havale/EFT ile veya talep ederseniz elden nakit olarak yapılır. Paranız hesabınıza geçmeden satış işlemi tamamlanmaz.",
+      "category": "odeme"
+    },
+    {
+      "id": 2,
+      "question": "Çekici ücreti ödeyecek miyim?",
+      "answer": "Hayır, kesinlikle çekici ücreti ödemezsiniz. Aracınızın durumu ne olursa olsun (yürür veya yürümez), Türkiye'nin neresinde olursanız olun çekici hizmetimiz tamamen ücretsizdir.",
+      "category": "hizmet"
+    },
+    {
+      "id": 3,
+      "question": "Rehinli veya hacizli araç alıyor musunuz?",
+      "answer": "Evet, rehinli veya üzerinde haciz bulunan araçların borçlarını kapatarak satın alma işlemi gerçekleştirebiliyoruz. Detaylı bilgi için uzman ekibimizle görüşebilirsiniz.",
+      "category": "arac"
+    },
+    {
+      "id": 4,
+      "question": "Fiyat teklifi almak ücretli mi?",
+      "answer": "Ekspertiz ve fiyat teklifi hizmetimiz tamamen ücretsizdir. Aracınız için fiyat aldıktan sonra satıp satmama konusunda tamamen özgürsünüz.",
+      "category": "hizmet"
+    },
+    {
+      "id": 5,
+      "question": "Hangi marka ve model araçları alıyorsunuz?",
+      "answer": "Marka ve model fark etmeksizin tüm araçları değerlendiriyoruz. Otomobil, SUV, ticari araç, kamyonet, minibüs gibi her türlü aracı alıyoruz.",
+      "category": "arac"
+    },
+    {
+      "id": 6,
+      "question": "Satış işlemi ne kadar sürer?",
+      "answer": "Fiyatta anlaştığımız anda satış işlemi aynı gün içinde tamamlanır. Sabah iletişime geçerseniz, akşama kadar paranızı alabilirsiniz.",
+      "category": "islem"
+    },
+    {
+      "id": 7,
+      "question": "Aracım yürümüyor, nasıl teslim ederim?",
+      "answer": "Ücretsiz çekici hizmetimiz sayesinde aracınızı bulunduğu adresten alıyoruz. Yürüsün veya yürümesin, Türkiye'nin her yerinden çekici gönderiyoruz.",
+      "category": "hizmet"
+    },
+    {
+      "id": 8,
+      "question": "Pert kaydı olan araç satılabilir mi?",
+      "answer": "Evet, pert kaydı olan araçları da satın alıyoruz. Sigorta şirketi tarafından pert kararı verilmiş araçlarınız için de rekabetçi fiyat sunuyoruz.",
+      "category": "arac"
+    }
+  ]
+}
