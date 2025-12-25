@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -145,6 +147,8 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <FloatingActions />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
