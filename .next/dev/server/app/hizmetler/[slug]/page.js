@@ -1,6 +1,6 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/hizmetler/[slug]/page.js")
 R.c("server/chunks/ssr/31f94_db6ae673._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__0f61a84f._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d87e3cce._.js")
 R.c("server/chunks/ssr/31f94_next_dist_d2756094._.js")
 R.c("server/chunks/ssr/[externals]__7f148858._.js")
 R.c("server/chunks/ssr/31f94_next_dist_client_components_builtin_global-error_ceb3e019.js")

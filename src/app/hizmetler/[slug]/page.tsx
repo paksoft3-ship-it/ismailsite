@@ -6,6 +6,9 @@ import servicesData from '@/data/services.json';
 import siteData from '@/data/site.json';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
+import Testimonials from '@/components/sections/Testimonials';
+import TrustBadges from '@/components/sections/TrustBadges';
+import CallbackRequest from '@/components/sections/CallbackRequest';
 import { FaWhatsapp, FaPhone, FaCheck } from 'react-icons/fa';
 
 interface Props {
@@ -255,6 +258,10 @@ export default async function HizmetDetayPage({ params }: Props) {
       {service.faq && service.faq.length > 0 && (
         <FAQ items={service.faq} />
       )}
+
+      <TrustBadges />
+      <CallbackRequest />
+      <Testimonials limit={3} />
 
       <CTA
         title={`${service.shortTitle} için Fiyat Alın!`}

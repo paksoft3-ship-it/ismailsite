@@ -241,7 +241,8 @@ function Header() {
                                         onMouseEnter: ()=>setActiveDropdown('services'),
                                         onMouseLeave: ()=>setActiveDropdown(null),
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/hizmetler",
                                                 className: "px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1",
                                                 children: [
                                                     "Hizmetler",
@@ -302,7 +303,8 @@ function Header() {
                                         onMouseEnter: ()=>setActiveDropdown('cities'),
                                         onMouseLeave: ()=>setActiveDropdown(null),
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/sehirler",
                                                 className: "px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1",
                                                 children: [
                                                     "Şehirler",
@@ -557,13 +559,29 @@ function Header() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "border-b",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: ()=>setMobileSubmenu(mobileSubmenu === 'services' ? null : 'services'),
-                                                className: "w-full flex items-center justify-between py-3 text-gray-700",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-between",
                                                 children: [
-                                                    "Hizmetler",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronDown"], {
-                                                        className: `transition-transform ${mobileSubmenu === 'services' ? 'rotate-180' : ''}`
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        href: "/hizmetler",
+                                                        className: "flex-1 py-3 text-gray-700",
+                                                        onClick: ()=>setIsMobileMenuOpen(false),
+                                                        children: "Hizmetler"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/ismail/src/components/layout/Header.tsx",
+                                                        lineNumber: 264,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>setMobileSubmenu(mobileSubmenu === 'services' ? null : 'services'),
+                                                        className: "p-3 text-gray-700",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronDown"], {
+                                                            className: `transition-transform ${mobileSubmenu === 'services' ? 'rotate-180' : ''}`
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/ismail/src/components/layout/Header.tsx",
+                                                            lineNumber: 277,
+                                                            columnNumber: 21
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
                                                         lineNumber: 271,
@@ -572,7 +590,7 @@ function Header() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                lineNumber: 264,
+                                                lineNumber: 263,
                                                 columnNumber: 17
                                             }, this),
                                             mobileSubmenu === 'services' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -584,39 +602,55 @@ function Header() {
                                                         children: service.shortTitle
                                                     }, service.slug, false, {
                                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                        lineNumber: 279,
+                                                        lineNumber: 286,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                lineNumber: 277,
+                                                lineNumber: 284,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                        lineNumber: 263,
+                                        lineNumber: 262,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "border-b",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: ()=>setMobileSubmenu(mobileSubmenu === 'cities' ? null : 'cities'),
-                                                className: "w-full flex items-center justify-between py-3 text-gray-700",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-between",
                                                 children: [
-                                                    "Şehirler",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronDown"], {
-                                                        className: `transition-transform ${mobileSubmenu === 'cities' ? 'rotate-180' : ''}`
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        href: "/sehirler",
+                                                        className: "flex-1 py-3 text-gray-700",
+                                                        onClick: ()=>setIsMobileMenuOpen(false),
+                                                        children: "Şehirler"
                                                     }, void 0, false, {
                                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
                                                         lineNumber: 301,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>setMobileSubmenu(mobileSubmenu === 'cities' ? null : 'cities'),
+                                                        className: "p-3 text-gray-700",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronDown"], {
+                                                            className: `transition-transform ${mobileSubmenu === 'cities' ? 'rotate-180' : ''}`
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/ismail/src/components/layout/Header.tsx",
+                                                            lineNumber: 314,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/ismail/src/components/layout/Header.tsx",
+                                                        lineNumber: 308,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                lineNumber: 294,
+                                                lineNumber: 300,
                                                 columnNumber: 17
                                             }, this),
                                             mobileSubmenu === 'cities' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -629,7 +663,7 @@ function Header() {
                                                             children: city.name
                                                         }, city.slug, false, {
                                                             fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                            lineNumber: 309,
+                                                            lineNumber: 323,
                                                             columnNumber: 23
                                                         }, this)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -639,19 +673,19 @@ function Header() {
                                                         children: "Tüm Şehirler →"
                                                     }, void 0, false, {
                                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                        lineNumber: 318,
+                                                        lineNumber: 332,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                lineNumber: 307,
+                                                lineNumber: 321,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                        lineNumber: 293,
+                                        lineNumber: 299,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -661,7 +695,7 @@ function Header() {
                                         children: "Hakkımızda"
                                     }, void 0, false, {
                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                        lineNumber: 329,
+                                        lineNumber: 343,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -671,7 +705,7 @@ function Header() {
                                         children: "Blog"
                                     }, void 0, false, {
                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                        lineNumber: 336,
+                                        lineNumber: 350,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -681,7 +715,7 @@ function Header() {
                                         children: "İletişim"
                                     }, void 0, false, {
                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                        lineNumber: 343,
+                                        lineNumber: 357,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -698,14 +732,14 @@ function Header() {
                                                         className: "text-xl"
                                                     }, void 0, false, {
                                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                        lineNumber: 360,
+                                                        lineNumber: 374,
                                                         columnNumber: 19
                                                     }, this),
                                                     "WhatsApp ile Ulaşın"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                lineNumber: 353,
+                                                lineNumber: 367,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -717,20 +751,20 @@ function Header() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaPhone"], {}, void 0, false, {
                                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                        lineNumber: 370,
+                                                        lineNumber: 384,
                                                         columnNumber: 19
                                                     }, this),
                                                     __TURBOPACK__imported__module__$5b$project$5d2f$ismail$2f$src$2f$data$2f$site$2e$json__$28$json$29$__["default"].phone
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                                lineNumber: 363,
+                                                lineNumber: 377,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/ismail/src/components/layout/Header.tsx",
-                                        lineNumber: 352,
+                                        lineNumber: 366,
                                         columnNumber: 15
                                     }, this)
                                 ]

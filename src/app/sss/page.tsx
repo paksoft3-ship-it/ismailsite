@@ -3,6 +3,8 @@ import siteData from '@/data/site.json';
 import PageHero from '@/components/common/PageHero';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
+import Testimonials from '@/components/sections/Testimonials';
+import CallbackRequest from '@/components/sections/CallbackRequest';
 
 export const metadata: Metadata = {
     title: 'Sıkça Sorulan Sorular | Hasarlı Araç Alım',
@@ -60,6 +62,8 @@ export default function FAQPage() {
                 </div>
             </section>
 
+            <CallbackRequest />
+            <Testimonials />
             <CTA
                 title="Başka Sorunuz mu Var?"
                 subtitle="Aklınıza takılan diğer sorular için 7/24 bizimle iletişime geçebilirsiniz."

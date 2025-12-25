@@ -4,7 +4,15 @@
 
 'use client';
 
-import guaranteesData from '@/data/guarantees.json';
+// Using text-based partner display for reliability
+const partners = [
+  { name: 'Türkiye Sigorta', icon: 'shield' },
+  { name: 'Axa Sigorta', icon: 'verified_user' },
+  { name: 'Allianz', icon: 'security' },
+  { name: 'Akbank', icon: 'account_balance' },
+  { name: 'İş Bankası', icon: 'account_balance' },
+  { name: 'Garanti BBVA', icon: 'account_balance' },
+];
 
 export default function TrustBadges() {
   const paymentMethods = [
@@ -27,17 +35,14 @@ export default function TrustBadges() {
           <p className="text-center text-sm text-gray-400 uppercase tracking-wider mb-6">
             İş Ortaklarımız
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {guaranteesData.partners.map((partner, index) => (
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+            {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center h-12 px-4 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all"
+                className="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-3 border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all"
               >
-                {/* Placeholder for logo - replace with actual Image component when logos are available */}
-                <div className="flex items-center gap-2 text-gray-400 hover:text-secondary transition-colors">
-                  <span className="material-symbols-outlined">business</span>
-                  <span className="font-semibold text-sm">{partner.name}</span>
-                </div>
+                <span className="material-symbols-outlined text-primary text-xl">{partner.icon}</span>
+                <span className="font-semibold text-sm text-secondary">{partner.name}</span>
               </div>
             ))}
           </div>

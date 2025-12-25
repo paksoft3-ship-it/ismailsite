@@ -113,13 +113,13 @@ export default function Header() {
                 onMouseEnter={() => setActiveDropdown('services')}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
+                <Link href="/hizmetler" className="px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
                   Hizmetler
                   <FaChevronDown
                     className={`text-xs transition-transform ${activeDropdown === 'services' ? 'rotate-180' : ''
                       }`}
                   />
-                </button>
+                </Link>
                 {activeDropdown === 'services' && (
                   <div className="absolute top-full left-0 w-64 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
                     {servicesData.services.map((service: any) => (
@@ -144,13 +144,13 @@ export default function Header() {
                 onMouseEnter={() => setActiveDropdown('cities')}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
+                <Link href="/sehirler" className="px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
                   Şehirler
                   <FaChevronDown
                     className={`text-xs transition-transform ${activeDropdown === 'cities' ? 'rotate-180' : ''
                       }`}
                   />
-                </button>
+                </Link>
                 {activeDropdown === 'cities' && (
                   <div className="absolute top-full left-0 w-72 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
                     <div className="grid grid-cols-2 gap-1 p-2">
@@ -259,20 +259,27 @@ export default function Header() {
                 Ana Sayfa
               </Link>
 
-              {/* Mobile Services */}
               <div className="border-b">
-                <button
-                  onClick={() =>
-                    setMobileSubmenu(mobileSubmenu === 'services' ? null : 'services')
-                  }
-                  className="w-full flex items-center justify-between py-3 text-gray-700"
-                >
-                  Hizmetler
-                  <FaChevronDown
-                    className={`transition-transform ${mobileSubmenu === 'services' ? 'rotate-180' : ''
-                      }`}
-                  />
-                </button>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href="/hizmetler"
+                    className="flex-1 py-3 text-gray-700"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Hizmetler
+                  </Link>
+                  <button
+                    onClick={() =>
+                      setMobileSubmenu(mobileSubmenu === 'services' ? null : 'services')
+                    }
+                    className="p-3 text-gray-700"
+                  >
+                    <FaChevronDown
+                      className={`transition-transform ${mobileSubmenu === 'services' ? 'rotate-180' : ''
+                        }`}
+                    />
+                  </button>
+                </div>
                 {mobileSubmenu === 'services' && (
                   <div className="pl-4 pb-3 space-y-2">
                     {servicesData.services.map((service: any) => (
@@ -289,20 +296,27 @@ export default function Header() {
                 )}
               </div>
 
-              {/* Mobile Cities */}
               <div className="border-b">
-                <button
-                  onClick={() =>
-                    setMobileSubmenu(mobileSubmenu === 'cities' ? null : 'cities')
-                  }
-                  className="w-full flex items-center justify-between py-3 text-gray-700"
-                >
-                  Şehirler
-                  <FaChevronDown
-                    className={`transition-transform ${mobileSubmenu === 'cities' ? 'rotate-180' : ''
-                      }`}
-                  />
-                </button>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href="/sehirler"
+                    className="flex-1 py-3 text-gray-700"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Şehirler
+                  </Link>
+                  <button
+                    onClick={() =>
+                      setMobileSubmenu(mobileSubmenu === 'cities' ? null : 'cities')
+                    }
+                    className="p-3 text-gray-700"
+                  >
+                    <FaChevronDown
+                      className={`transition-transform ${mobileSubmenu === 'cities' ? 'rotate-180' : ''
+                        }`}
+                    />
+                  </button>
+                </div>
                 {mobileSubmenu === 'cities' && (
                   <div className="pl-4 pb-3 space-y-2">
                     {popularCities.map((city: any) => (

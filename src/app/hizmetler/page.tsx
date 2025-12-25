@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import servicesData from '@/data/services.json';
+import PageHero from '@/components/common/PageHero';
 import CTA from '@/components/sections/CTA';
+import ServiceAreas from '@/components/sections/ServiceAreas';
+import CallbackRequest from '@/components/sections/CallbackRequest';
+import Testimonials from '@/components/sections/Testimonials';
 
 export const metadata: Metadata = {
   title: 'Hizmetlerimiz - Hasarlı Araç Alım Hizmetleri',
@@ -21,20 +25,12 @@ const colorClasses: Record<string, { bg: string; text: string; border: string }>
 export default function HizmetlerPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary via-gray-900 to-secondary py-16 md:py-24">
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-              Hizmetlerimiz
-            </h1>
-            <p className="text-lg text-gray-300">
-              Her türlü hasarlı, kazalı ve sorunlu aracınız için profesyonel alım hizmeti sunuyoruz. 
-              Türkiye genelinde 7/24 hizmetinizdeyiz.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Hizmetlerimiz"
+        subtitle="Her türlü hasarlı, kazalı ve sorunlu aracınız için profesyonel alım hizmeti sunuyoruz. Türkiye genelinde 7/24 hizmetinizdeyiz."
+        backgroundImage="/images/backgrounds/services-hero.png"
+        badgeText="Profesyonel Hizmet"
+      />
 
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
@@ -85,6 +81,9 @@ export default function HizmetlerPage() {
         </div>
       </section>
 
+      <ServiceAreas />
+      <CallbackRequest />
+      <Testimonials />
       <CTA />
     </>
   );

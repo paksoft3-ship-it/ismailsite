@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import citiesData from '@/data/cities.json';
+import PageHero from '@/components/common/PageHero';
 import CTA from '@/components/sections/CTA';
+import Testimonials from '@/components/sections/Testimonials';
+import CallbackRequest from '@/components/sections/CallbackRequest';
+import TrustBadges from '@/components/sections/TrustBadges';
 
 export const metadata: Metadata = {
   title: 'Hizmet Verdiğimiz Şehirler - Türkiye Geneli Hasarlı Araç Alım',
@@ -22,20 +26,12 @@ const regionOrder = ['Marmara', 'Ege', 'Akdeniz', 'İç Anadolu', 'Karadeniz', '
 export default function SehirlerPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary via-gray-900 to-secondary py-16 md:py-24">
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-              Hizmet Verdiğimiz Şehirler
-            </h1>
-            <p className="text-lg text-gray-300">
-              Türkiye genelinde 81 ilde hasarlı araç alım hizmeti sunuyoruz. 
-              Bulunduğunuz şehirde ücretsiz ekspertiz, aynı gün nakit ödeme ve ücretsiz çekici hizmetimizden yararlanın.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Hizmet Verdiğimiz Şehirler"
+        subtitle="Türkiye genelinde 81 ilde hasarlı araç alım hizmeti sunuyoruz. Bulunduğunuz şehirde ücretsiz ekspertiz, aynı gün nakit ödeme ve ücretsiz çekici hizmetimizden yararlanın."
+        backgroundImage="/images/backgrounds/cities-hero.png"
+        badgeText="81 İl Kapsama"
+      />
 
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
@@ -82,7 +78,7 @@ export default function SehirlerPage() {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="container-custom">
           <h2 className="text-2xl font-bold text-secondary mb-8">Tüm Şehirler</h2>
-          
+
           <div className="space-y-10">
             {regionOrder.map((region) => (
               groupedCities[region] && (
@@ -112,6 +108,9 @@ export default function SehirlerPage() {
         </div>
       </section>
 
+      <TrustBadges />
+      <CallbackRequest />
+      <Testimonials />
       <CTA />
     </>
   );

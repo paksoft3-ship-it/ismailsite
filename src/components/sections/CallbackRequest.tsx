@@ -1,6 +1,6 @@
 // Path: src/components/sections/CallbackRequest.tsx
-// Description: "Sizi Arayalım" popup modal for callback requests
-// Usage: Import in layout.tsx and render at root level
+// Description: "Sizi Arayalım" popup modal - sends form data directly to WhatsApp
+// Usage: Import in pages and render
 
 'use client';
 
@@ -14,8 +14,6 @@ export default function CallbackRequest() {
     name: '',
     phone: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Show popup after 30 seconds on first visit
   useEffect(() => {
@@ -50,29 +48,25 @@ export default function CallbackRequest() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
     // Track conversion
     if (typeof window !== 'undefined') {
       (window as any).trackFormSubmit?.();
     }
 
-    // Simulate submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+    // Send directly to WhatsApp with form data
+    const message = `Merhaba, beni aramanızı istiyorum.%0A%0AAdım: ${formData.name}%0ATelefon: ${formData.phone}`;
+    window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${message}`, '_blank');
 
-      // Send to WhatsApp
-      const message = `Merhaba, beni aramanızı istiyorum.%0A%0AAdım: ${formData.name}%0ATelefon: ${formData.phone}`;
-      window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${message}`, '_blank');
+    // Close modal
+    setIsOpen(false);
+    setFormData({ name: '', phone: '' });
+  };
 
-      // Close modal after 3 seconds
-      setTimeout(() => {
-        setIsOpen(false);
-        setIsSubmitted(false);
-        setFormData({ name: '', phone: '' });
-      }, 3000);
-    }, 1000);
+  const handleDirectWhatsApp = () => {
+    const message = 'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.';
+    window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(message)}`, '_blank');
+    setIsOpen(false);
   };
 
   if (!isOpen) return null;
@@ -90,93 +84,79 @@ export default function CallbackRequest() {
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors z-10"
+          className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors z-10"
         >
           <span className="material-symbols-outlined">close</span>
         </button>
 
         {/* Header */}
-        <div className="bg-gradient-to-r from-primary to-emerald-500 px-6 py-8 text-center">
-          <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="material-symbols-outlined text-white text-3xl">call</span>
+        <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] px-6 py-8 text-center">
+          <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 ring-4 ring-white/30">
+            <span className="material-symbols-outlined text-white text-4xl">chat</span>
           </div>
-          <h3 className="text-2xl font-bold text-white mb-2">Sizi Arayalım</h3>
+          <h3 className="text-2xl font-bold text-white mb-2">WhatsApp ile Ulaşın</h3>
           <p className="text-white/80 text-sm">
-            Bilgilerinizi bırakın, 5 dakika içinde sizi arayalım
+            Bilgilerinizi girin, WhatsApp üzerinden size dönüş yapalım
           </p>
         </div>
 
         {/* Form */}
         <div className="p-6">
-          {isSubmitted ? (
-            <div className="text-center py-8">
-              <span className="material-symbols-outlined text-5xl text-green-500 mb-4">check_circle</span>
-              <h4 className="text-xl font-bold text-secondary mb-2">Teşekkürler!</h4>
-              <p className="text-gray-500">En kısa sürede sizi arayacağız.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Adınız Soyadınız
-                </label>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Adınız Soyadınız
+              </label>
+              <div className="relative">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-400 text-xl">person</span>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full h-12 px-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  className="w-full h-12 pl-12 pr-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#25D366]/50 focus:border-[#25D366]"
                   placeholder="Ahmet Yılmaz"
                 />
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Telefon Numaranız
-                </label>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Telefon Numaranız
+              </label>
+              <div className="relative">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-400 text-xl">smartphone</span>
                 <input
                   type="tel"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full h-12 px-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  className="w-full h-12 pl-12 pr-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#25D366]/50 focus:border-[#25D366]"
                   placeholder="0532 XXX XX XX"
                 />
               </div>
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full h-14 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 disabled:opacity-70"
-              >
-                {isSubmitting ? (
-                  <>
-                    <span className="animate-spin material-symbols-outlined">progress_activity</span>
-                    Gönderiliyor...
-                  </>
-                ) : (
-                  <>
-                    <span className="material-symbols-outlined">call</span>
-                    Beni Arayın
-                  </>
-                )}
-              </button>
-            </form>
-          )}
-
-          {/* Alternative */}
-          {!isSubmitted && (
-            <div className="mt-4 text-center">
-              <p className="text-sm text-gray-400 mb-2">veya hemen arayın</p>
-              <a
-                href={`tel:${siteConfig.contact.phone}`}
-                className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
-              >
-                <span className="material-symbols-outlined">phone</span>
-                {siteConfig.contact.phone}
-              </a>
             </div>
-          )}
+            <button
+              type="submit"
+              className="w-full h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-900/20"
+            >
+              <span className="material-symbols-outlined">chat</span>
+              WhatsApp'a Gönder
+            </button>
+          </form>
+
+          {/* Alternative Options */}
+          <div className="mt-6 pt-6 border-t border-gray-100">
+            <p className="text-sm text-gray-400 text-center mb-4">veya hemen arayın</p>
+            <a
+              href={`tel:${siteConfig.contact.phone}`}
+              className="flex items-center justify-center gap-2 w-full h-12 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-all"
+            >
+              <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+              {siteConfig.contact.phone}
+            </a>
+          </div>
         </div>
       </div>
     </div>

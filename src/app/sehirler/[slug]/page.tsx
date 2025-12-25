@@ -7,6 +7,9 @@ import servicesData from '@/data/services.json';
 import siteData from '@/data/site.json';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
+import Testimonials from '@/components/sections/Testimonials';
+import TrustBadges from '@/components/sections/TrustBadges';
+import CallbackRequest from '@/components/sections/CallbackRequest';
 import { FaWhatsapp, FaPhone, FaCheck, FaMapMarkerAlt } from 'react-icons/fa';
 
 interface Props {
@@ -329,6 +332,10 @@ export default async function SehirDetayPage({ params }: Props) {
           }),
         }}
       />
+
+      <TrustBadges />
+      <CallbackRequest />
+      <Testimonials limit={3} />
 
       <CTA
         title={`${city.name}'da Hasarlı Aracınızı Satın!`}

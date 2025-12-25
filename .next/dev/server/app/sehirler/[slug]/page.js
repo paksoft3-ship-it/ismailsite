@@ -1,6 +1,6 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/sehirler/[slug]/page.js")
 R.c("server/chunks/ssr/31f94_bfa874d7._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__c490239c._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__50da2d2c._.js")
 R.c("server/chunks/ssr/31f94_next_dist_d2756094._.js")
 R.c("server/chunks/ssr/[externals]__7f148858._.js")
 R.c("server/chunks/ssr/31f94_next_dist_client_components_builtin_global-error_ceb3e019.js")
