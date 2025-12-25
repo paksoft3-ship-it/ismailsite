@@ -1,9 +1,3 @@
 {
-  "/blog/page": "app/blog/page.js",
-  "/hizmetler/[slug]/page": "app/hizmetler/[slug]/page.js",
-  "/hizmetler/page": "app/hizmetler/page.js",
-  "/iletisim/page": "app/iletisim/page.js",
-  "/page": "app/page.js",
-  "/sehirler/[slug]/page": "app/sehirler/[slug]/page.js",
-  "/sehirler/page": "app/sehirler/page.js"
+  "/page": "app/page.js"
 }

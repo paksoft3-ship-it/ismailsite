@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import siteData from '@/data/site.json';
 import servicesData from '@/data/services.json';
 import citiesData from '@/data/cities.json';
-import { FaWhatsapp, FaPhone, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { FaPhone, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 
 const popularCities = citiesData.cities.filter((city: any) => city.isPopular).slice(0, 8);
 
@@ -87,14 +89,15 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <span className="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">
-                car_crash
-              </span>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-secondary leading-tight">
-                  Hasarlı Araç
-                </span>
-                <span className="text-sm text-primary font-semibold -mt-1">Alım Merkezi</span>
+              <div className="relative h-16 w-64 group-hover:scale-105 transition-transform">
+                <Image
+                  src="/images/logo_transparent.png"
+                  alt="Hasarlı Araç Alım Merkezi"
+                  fill
+                  className="object-contain object-left"
+                  sizes="(max-width: 768px) 200px, 250px"
+                  priority
+                />
               </div>
             </Link>
 
@@ -205,7 +208,7 @@ export default function Header() {
                 onClick={handleWhatsAppClick}
                 className="btn-whatsapp text-sm px-4 py-2"
               >
-                <FaWhatsapp className="text-lg" />
+                <WhatsAppIcon className="w-5 h-5" color="white" />
                 WhatsApp
               </button>
               <button
@@ -371,7 +374,7 @@ export default function Header() {
                   }}
                   className="btn-whatsapp w-full"
                 >
-                  <FaWhatsapp className="text-xl" />
+                  <WhatsAppIcon className="w-5 h-5" color="white" />
                   WhatsApp ile Ulaşın
                 </button>
                 <button

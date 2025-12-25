@@ -3,6 +3,7 @@
 // Usage: Add to homepage before CTA section, or create a dedicated blog page
 
 import Link from 'next/link';
+import Image from 'next/image';
 import blogData from '@/data/blog.json';
 
 interface BlogPreviewProps {
@@ -35,16 +36,19 @@ export default function BlogPreview({ limit = 3 }: BlogPreviewProps) {
               key={post.id}
               className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
             >
-              {/* Image Placeholder */}
-              <div className="relative h-48 bg-gradient-to-br from-primary/10 to-primary/5 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-6xl text-primary/30">
-                    article
-                  </span>
-                </div>
+              {/* Image */}
+              <div className="relative h-48 bg-gray-100 overflow-hidden">
+                <Image
+                  src={post.image || '/images/backgrounds/hasarli-hero.png'}
+                  alt={post.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
                 {/* Category Badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                     {post.category}
                   </span>
                 </div>

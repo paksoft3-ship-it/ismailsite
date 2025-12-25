@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import siteData from '@/data/site.json';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 interface HeroProps {
   title?: string;
@@ -73,7 +74,7 @@ export default function Hero({
               target="_blank"
               className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 text-base font-bold transition-all shadow-lg shadow-green-900/20"
             >
-              <span className="material-symbols-outlined mr-2">chat</span>
+              <WhatsAppIcon className="w-6 h-6 mr-2" color="white" />
               WhatsApp İle Gönder
             </Link>
           </div>

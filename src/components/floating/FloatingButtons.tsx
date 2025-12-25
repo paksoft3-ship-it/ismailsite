@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import siteData from '@/data/site.json';
-import { FaWhatsapp, FaPhone, FaComments, FaTimes } from 'react-icons/fa';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { FaPhone, FaComments, FaTimes } from 'react-icons/fa';
 
 export default function FloatingButtons() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -96,12 +97,13 @@ export default function FloatingButtons() {
         >
           {/* Pulse Ring */}
           <span className="absolute inset-0 rounded-full bg-whatsapp animate-pulse-ring" />
-          
+
+          {/* Major replacement in main button */}
           {isExpanded ? (
-            <FaWhatsapp className="text-3xl" />
+            <WhatsAppIcon className="w-8 h-8" color="white" />
           ) : (
             <>
-              <FaWhatsapp className="text-3xl" />
+              <WhatsAppIcon className="w-8 h-8" color="white" />
               {/* Notification Badge */}
               <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-xs font-bold">
                 1
@@ -138,7 +140,7 @@ export default function FloatingButtons() {
             }
             className="flex flex-col items-center justify-center py-3 text-whatsapp hover:bg-green-50 transition-colors"
           >
-            <FaWhatsapp className="text-xl mb-1" />
+            <WhatsAppIcon className="w-5 h-5 mb-1" />
             <span className="text-xs font-medium">WhatsApp</span>
           </button>
           <button

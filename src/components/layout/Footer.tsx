@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import siteData from '@/data/site.json';
 import servicesData from '@/data/services.json';
 import citiesData from '@/data/cities.json';
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const popularCities = citiesData.cities.filter((city: any) => city.isPopular).slice(0, 6);
 
@@ -17,10 +19,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <span className="material-symbols-outlined text-3xl text-primary">car_crash</span>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-white leading-tight">Hasarlı Araç</span>
-                <span className="text-sm text-primary font-semibold -mt-1">Alım Merkezi</span>
+              <div className="relative h-20 w-72">
+                <Image
+                  src="/images/logo.png"
+                  alt="Hasarlı Araç Alım Merkezi"
+                  fill
+                  className="object-contain object-left"
+                  sizes="(max-width: 768px) 240px, 300px"
+                />
               </div>
             </Link>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">
@@ -68,7 +74,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Hızlı Linkler</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Hızlı Linkler</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-primary transition-colors text-sm">
@@ -95,7 +101,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Hizmetlerimiz</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Hizmetlerimiz</h3>
             <ul className="space-y-2">
               {servicesData.services.map((service: any) => (
                 <li key={service.slug}>
@@ -112,7 +118,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-bold mb-4">İletişim</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">İletişim</h3>
             <ul className="space-y-3">
               <li>
                 <a
@@ -130,7 +136,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary transition-colors text-sm"
                 >
-                  <FaWhatsapp className="text-primary" />
+                  <WhatsAppIcon className="w-5 h-5 text-primary" />
                   WhatsApp İletişim
                 </a>
               </li>

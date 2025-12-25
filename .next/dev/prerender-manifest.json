@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/sehirler/istanbul":{},"/sehirler/ankara":{},"/sehirler/izmir":{},"/sehirler/bursa":{},"/sehirler/antalya":{},"/sehirler/adana":{},"/sehirler/kocaeli":{},"/sehirler/konya":{},"/sehirler/mersin":{},"/sehirler/gaziantep":{},"/sehirler/samsun":{},"/sehirler/eskisehir":{},"/sehirler/kayseri":{},"/sehirler/diyarbakir":{},"/sehirler/denizli":{},"/sehirler/manisa":{},"/sehirler/trabzon":{},"/sehirler/sanliurfa":{},"/sehirler/sakarya":{},"/sehirler/malatya":{},"/sehirler/kahramanmaras":{},"/sehirler/erzurum":{},"/sehirler/van":{},"/sehirler/balikesir":{},"/sehirler/tekirdag":{},"/sehirler/aydin":{},"/sehirler/mugla":{},"/sehirler/hatay":{},"/hizmetler/hasarli-arac-alim-satim":{},"/hizmetler/kazali-arac-alim-satim":{},"/hizmetler/hurda-arac-alim-satim":{},"/hizmetler/pert-arac-alim-satim":{},"/hizmetler/motor-arizali-arac-alim-satim":{},"/hizmetler/cekme-belgeli-arac-alim-satim":{}},"dynamicRoutes":{"/sehirler/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/sehirler/[slug]","routeRegex":"^\\/sehirler\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/hizmetler/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/hizmetler/[slug]","routeRegex":"^\\/hizmetler\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"4b92e82c642d7dcb9ac7433dcb793e34","previewModeSigningKey":"707cbab861c517c11031372e5aa9981faac63f155036b2a100662a1ca20ed406","previewModeEncryptionKey":"cf2bed39899eb3005edf173ea82e580d525c7956faa0d19fe8f8c05a8e577930"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "f3cce933bfab7e2128cf6e4c69c37120",
+    "previewModeSigningKey": "c01b9fe7aa9786fbcefd93d57e115a07d81f0385666d009a198f74ad06a1ca77",
+    "previewModeEncryptionKey": "794a4d5a9eec3d2da58fadcbba9394047728a9e3fd815010eec2cebdbb8f157a"
+  }
+}

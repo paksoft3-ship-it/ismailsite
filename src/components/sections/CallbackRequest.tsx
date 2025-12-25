@@ -6,6 +6,7 @@
 
 import { useState, useEffect } from 'react';
 import siteConfig from '@/data/site.json';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 export default function CallbackRequest() {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,7 +93,7 @@ export default function CallbackRequest() {
         {/* Header */}
         <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] px-6 py-8 text-center">
           <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 ring-4 ring-white/30">
-            <span className="material-symbols-outlined text-white text-4xl">chat</span>
+            <WhatsAppIcon className="w-10 h-10" color="white" />
           </div>
           <h3 className="text-2xl font-bold text-white mb-2">WhatsApp ile Ulaşın</h3>
           <p className="text-white/80 text-sm">
@@ -141,7 +142,7 @@ export default function CallbackRequest() {
               type="submit"
               className="w-full h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-900/20"
             >
-              <span className="material-symbols-outlined">chat</span>
+              <WhatsAppIcon className="w-6 h-6" color="white" />
               WhatsApp'a Gönder
             </button>
           </form>

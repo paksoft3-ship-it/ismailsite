@@ -1,150 +1,63 @@
-[00:00:02.992] Server  LOG     ✓ Ready in 1760ms
-[00:00:14.304] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:00:00.748] Server  LOG     ✓ Ready in 514ms
+[00:00:01.734] Server  ERROR   ⨯ ./ismail/src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: The PNG is not in RGBA format!
+- The PNG is not in RGBA format!
+
+
+[00:00:02.035] Browser ERROR   uncaughtError: Error: ./ismail/src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: The PNG is not in RGBA format!
+- The PNG is not in RGBA format!
+
+
+[00:00:02.419] Browser ERROR   ./ismail/src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: The PNG is not in RGBA format!
+- The PNG is not in RGBA format!
+[00:00:02.419] Browser ERROR   ./ismail/src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: The PNG is not in RGBA format!
+- The PNG is not in RGBA format!
+[00:00:23.420] Browser ERROR   ./ismail/src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: The PNG is not in RGBA format!
+- The PNG is not in RGBA format!
+[00:00:25.164] Browser ERROR   ./ismail/src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer
+[00:00:25.192] Server  LOG     ✓ Compiled in 10ms
+[00:00:25.697] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:33.197] Server  WARN    Image with src "/images/backgrounds/ankara-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:00:27.422] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:37.119] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:40.248] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:00:27.422] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:27.422] Browser WARN    Image with src "/images/backgrounds/pert-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:27.422] Browser WARN    Image with src "/images/backgrounds/kazali-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:14.696] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:19.348] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:44.475] Browser WARN    Image with src "/images/backgrounds/ankara-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:46.542] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:10.716] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:16.396] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:43.336] Browser WARN    Image with src "/images/backgrounds/hurda-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:43.336] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:05:54.929] Server  WARN    Image with src "/images/backgrounds/hurda-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:57.276] Browser WARN    Image with src "/images/backgrounds/hurda-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:06:11.082] Browser WARN    Image with src "/images/backgrounds/kocaeli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:06:11.092] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:06:27.189] Server  LOG     ○ Compiling /sehirler ...
-[00:12:20.230] Server  LOG     ✓ Compiled in 14.7s
-[00:14:16.038] Server  LOG     ✓ Compiled in 6.9s
-[00:14:21.813] Server  LOG     ✓ Compiled in 120ms
-[00:14:21.864] Server  LOG     ○ Compiling /hizmetler ...
-[00:14:25.717] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:14:37.667] Browser WARN    Image with src "/images/backgrounds/pert-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:14:37.678] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:14:56.521] Server  WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:15:07.494] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:17:59.159] Server  LOG     ✓ Compiled in 3.1s
-[00:21:31.612] Server  LOG     ✓ Compiled in 3.4s
-[00:23:09.265] Server  LOG     ✓ Compiled in 2.8s
-[00:23:10.837] Server  LOG     ✓ Compiled in 0ms
-[00:27:58.532] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:28:01.746] Browser WARN    Image with src "/images/backgrounds/kazali-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:28:01.746] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:30:59.639] Server  WARN    Image with src "/images/backgrounds/cities-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:31:00.856] Browser WARN    Image with src "/images/backgrounds/cities-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:31:12.723] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:31:47.559] Browser WARN    Image with src "/images/backgrounds/faq-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:31:47.561] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:31:47.561] Browser WARN    Image with src "/images/backgrounds/services-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:47.561] Browser WARN    Image with src "/images/backgrounds/kazali-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:47.561] Browser WARN    Image with src "/images/backgrounds/pert-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:47.561] Browser WARN    Image with src "/images/backgrounds/about-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:47.561] Browser WARN    Image with src "/images/backgrounds/hurda-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:47.561] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:59.329] Browser WARN    Image with src "/images/backgrounds/contact-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:32:13.936] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:32:41.245] Server  LOG     ✓ Compiled in 1487ms
-[00:33:20.096] Browser WARN    Image with src "/images/backgrounds/cities-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:34:40.669] Server  LOG     ✓ Compiled in 3.3s
-[00:35:03.425] Server  LOG     ✓ Compiled in 4.1s
-[00:35:58.600] Server  LOG     ✓ Compiled in 580ms
-[00:36:18.467] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:36:18.469] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:37:08.299] Browser WARN    Image with src "/images/backgrounds/kocaeli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:37:44.757] Server  LOG     ✓ Compiled in 13ms
-[00:37:45.642] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:37:50.127] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:37:57.377] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:37:57.413] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:39:50.616] Server  LOG     ✓ Compiled in 2.4s
-[00:45:28.305] Server  LOG     ✓ Compiled in 175ms
-[00:45:53.941] Server  LOG     ✓ Compiled in 2.6s
-[00:48:51.335] Server  LOG     ✓ Compiled in 206ms
-[00:52:44.131] Server  LOG     ✓ Compiled in 2.4s
-[01:08:13.019] Server  LOG     ✓ Compiled in 157ms
-[01:08:14.713] Server  WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:08:16.495] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:22:13.202] Server  LOG     ✓ Compiled in 2.2s
-[01:27:28.996] Server  LOG     ✓ Compiled in 2.8s
-[01:28:57.139] Server  LOG     ✓ Compiled in 1455ms
-[01:29:15.341] Server  LOG     ✓ Compiled in 2.2s
-[01:31:54.800] Server  WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:31:58.811] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:32:34.319] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:32:48.441] Browser WARN    Image with src "/images/backgrounds/services-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:33:26.993] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:33:27.485] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:37:31.887] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:37:38.803] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:37:45.745] Server  LOG     ✓ Compiled in 5.3s
-[01:39:39.679] Server  LOG     ✓ Compiled in 2.3s
-[01:44:54.237] Server  LOG     ✓ Compiled in 111ms
-[01:44:55.227] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:44:57.919] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:46:43.777] Server  LOG     ✓ Compiled in 1968ms
-[01:49:25.546] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[01:49:29.409] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:00:32.458] Server  LOG     ✓ Compiled in 3.6s
-[02:07:10.040] Server  LOG     ✓ Compiled in 1997ms
-[02:09:49.612] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:10:07.850] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:15:40.742] Server  LOG     ✓ Compiled in 3s
-[02:18:01.508] Server  LOG     ✓ Compiled in 2.7s
-[02:30:43.115] Server  LOG     ✓ Compiled in 2.3s
-[02:31:27.066] Server  LOG     ✓ Compiled in 1481ms
-[02:36:01.945] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:36:13.233] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:39:09.938] Server  LOG     ✓ Compiled in 2.5s
-[02:39:20.320] Server  LOG     ✓ Compiled in 812ms
-[02:43:12.061] Server  LOG     ✓ Compiled in 154ms
-[02:43:13.464] Server  WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:43:16.461] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[02:45:09.970] Server  LOG     ✓ Compiled in 2s
+[00:02:19.348] Browser WARN    Image with src "/images/backgrounds/hasarli-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:25.111] Browser WARN    Image with src "/images/backgrounds/pert-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:25.111] Browser WARN    Image with src "/images/backgrounds/kazali-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:27.568] Server  LOG     ✓ Compiled in 133ms
+[00:08:38.320] Server  LOG     ✓ Compiled in 777ms
