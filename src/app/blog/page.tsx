@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import PageHero from '@/components/common/PageHero';
+import ContactButton from '@/components/common/ContactButton';
 import blogData from '@/data/blog.json';
 import type { Metadata } from 'next';
 
@@ -121,14 +122,15 @@ export default function BlogPage() {
                             <span className="material-symbols-outlined">contact_phone</span>
                             İletişime Geç
                         </Link>
-                        <Link
-                            href="https://wa.me/905322888080"
-                            target="_blank"
+                        <ContactButton
+                            type="whatsapp"
+                            position="blog_cta"
+                            whatsappMessage="Merhaba, hasarlı aracım için blog sayfanızdan ulaşıyorum. Fiyat teklifi almak istiyorum."
                             className="btn-whatsapp"
                         >
                             <span className="material-symbols-outlined">chat</span>
                             WhatsApp ile Yaz
-                        </Link>
+                        </ContactButton>
                     </div>
                 </div>
             </section>

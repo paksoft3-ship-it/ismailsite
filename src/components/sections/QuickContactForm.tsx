@@ -6,6 +6,7 @@
 
 import { useState } from 'react';
 import siteConfig from '@/data/site.json';
+import { trackLead } from '@/lib/tracking/lead';
 
 export default function QuickContactForm() {
   const [formData, setFormData] = useState({
@@ -24,17 +25,18 @@ export default function QuickContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Track conversion
-    if (typeof window !== 'undefined') {
-      (window as any).trackFormSubmit?.();
-    }
+    // Track conversion - Form Submit ONLY
+    trackLead({
+      type: 'form_submit',
+      source: 'quick_contact_form',
+    });
 
     // Simulate submission delay
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
 
-      // Open WhatsApp with form data
+      // Open WhatsApp with form data - NO tracking here to prevent double counting
       const message = `Merhaba, araç satışı için teklif almak istiyorum.%0A%0AAdım: ${formData.name}%0ATelefon: ${formData.phone}%0APlaka: ${formData.plate}`;
       window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${message}`, '_blank');
     }, 1000);

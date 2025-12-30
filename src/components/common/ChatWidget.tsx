@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FaRobot, FaTimes, FaWhatsapp, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import ContactButton from './ContactButton';
 import siteConfig from '@/data/site.json';
 
 const faqs = [
@@ -49,10 +50,6 @@ export default function ChatWidget() {
         setOpenFaqIndex(openFaqIndex === index ? null : index);
     };
 
-    const handleWhatsappRedirect = () => {
-        window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent("Merhaba, Chatbot üzerinden ulaşıyorum, bir sorum var.")}`, '_blank');
-    };
-
     return (
         <div className="relative" ref={widgetRef}>
             {/* Chat Dialog */}
@@ -95,16 +92,17 @@ export default function ChatWidget() {
                             ))}
                         </div>
 
-                        {/* Live Support Redirect */}
                         <div className="mt-4 pt-4 border-t border-gray-100">
                             <p className="text-xs text-gray-500 mb-2 text-center">Farklı bir sorunuz mu var?</p>
-                            <button
-                                onClick={handleWhatsappRedirect}
+                            <ContactButton
+                                type="whatsapp"
+                                position="chat_widget"
+                                whatsappMessage="Merhaba, Chatbot üzerinden ulaşıyorum, bir sorum var."
                                 className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white py-2.5 rounded-xl font-semibold text-sm transition-colors shadow-lg shadow-green-200"
                             >
                                 <FaWhatsapp className="text-lg" />
                                 WhatsApp Canlı Destek
-                            </button>
+                            </ContactButton>
                         </div>
                     </div>
                 </div>

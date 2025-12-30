@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import siteConfig from '@/data/site.json';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import ContactButton from '@/components/common/ContactButton';
 
 interface PageHeroProps {
     title: string;
@@ -67,23 +68,23 @@ export default function PageHero({
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto">
-                        <Link
-                            href={`tel:${siteConfig.contact.phone}`}
+                        <ContactButton
+                            type="phone"
+                            position="page_hero"
                             className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-primary hover:bg-primary-dark px-8 text-base font-bold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-[1.02] active:scale-[0.98]"
-                            onClick={() => (window as any).trackPhoneClick?.()}
                         >
                             HEMEN FİYAT AL
                             <span className="material-symbols-outlined ml-2">arrow_forward</span>
-                        </Link>
-                        <Link
-                            href={finalWhatsappLink}
-                            target="_blank"
+                        </ContactButton>
+                        <ContactButton
+                            type="whatsapp"
+                            position="page_hero"
+                            whatsappMessage={whatsappMessage}
                             className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 text-base font-bold transition-all shadow-lg shadow-green-900/20"
-                            onClick={() => (window as any).trackWhatsAppClick?.()}
                         >
                             <WhatsAppIcon className="w-5 h-5 mr-2" color="white" />
                             WhatsApp İle Gönder
-                        </Link>
+                        </ContactButton>
                     </div>
 
                     {/* Trust Indicators - Synced with Hero.tsx */}

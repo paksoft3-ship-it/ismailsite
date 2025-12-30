@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactButton from '@/components/common/ContactButton';
 import siteData from '@/data/site.json';
 import servicesData from '@/data/services.json';
 import citiesData from '@/data/cities.json';
@@ -25,28 +26,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleWhatsAppClick = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: `${siteData.googleAds.conversionId}/${siteData.googleAds.whatsappConversionLabel}`,
-      });
-    }
-    window.open(
-      `https://wa.me/${siteData.whatsapp}?text=${encodeURIComponent(
-        'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.'
-      )}`,
-      '_blank'
-    );
-  };
 
-  const handlePhoneClick = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: `${siteData.googleAds.conversionId}/${siteData.googleAds.phoneConversionLabel}`,
-      });
-    }
-    window.location.href = `tel:${siteData.phone.replace(/\s/g, '')}`;
-  };
 
   return (
     <>
@@ -68,14 +48,14 @@ export default function Header() {
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <a
-              href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+            <ContactButton
+              type="phone"
+              position="header_topbar"
               className="flex items-center gap-2 hover:text-primary transition-colors"
-              onClick={handlePhoneClick}
             >
               <FaPhone className="text-primary" />
               {siteData.phone}
-            </a>
+            </ContactButton>
           </div>
         </div>
       </div>
@@ -204,20 +184,22 @@ export default function Header() {
 
             {/* Desktop CTA Buttons */}
             <div className="hidden lg:flex items-center gap-3">
-              <button
-                onClick={handleWhatsAppClick}
-                className="btn-whatsapp text-sm px-4 py-2"
+              <ContactButton
+                type="whatsapp"
+                position="header_cta"
+                className="btn-whatsapp text-sm px-4 py-2 flex items-center justify-center gap-2"
               >
                 <WhatsAppIcon className="w-5 h-5" color="white" />
                 WhatsApp
-              </button>
-              <button
-                onClick={handlePhoneClick}
-                className="btn-primary text-sm px-4 py-2"
+              </ContactButton>
+              <ContactButton
+                type="phone"
+                position="header_cta"
+                className="btn-primary text-sm px-4 py-2 flex items-center justify-center gap-2"
               >
                 <FaPhone />
                 Hemen Ara
-              </button>
+              </ContactButton>
             </div>
 
             {/* Mobile Menu Button */}
@@ -367,26 +349,24 @@ export default function Header() {
 
               {/* Mobile CTA */}
               <div className="mt-6 space-y-3">
-                <button
-                  onClick={() => {
-                    handleWhatsAppClick();
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="btn-whatsapp w-full"
+                <ContactButton
+                  type="whatsapp"
+                  position="header_mobile"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="btn-whatsapp w-full flex items-center justify-center gap-2 px-4 py-2"
                 >
                   <WhatsAppIcon className="w-5 h-5" color="white" />
                   WhatsApp ile Ulaşın
-                </button>
-                <button
-                  onClick={() => {
-                    handlePhoneClick();
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="btn-primary w-full"
+                </ContactButton>
+                <ContactButton
+                  type="phone"
+                  position="header_mobile"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="btn-primary w-full flex items-center justify-center gap-2 px-4 py-2"
                 >
                   <FaPhone />
                   {siteData.phone}
-                </button>
+                </ContactButton>
               </div>
             </nav>
           </div>

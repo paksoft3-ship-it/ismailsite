@@ -2,6 +2,7 @@
 
 import siteData from '@/data/site.json';
 import { FaWhatsapp, FaPhone } from 'react-icons/fa';
+import ContactButton from '@/components/common/ContactButton';
 
 interface CTAProps {
   title?: string;
@@ -12,29 +13,6 @@ export default function CTA({
   title = 'Hemen Ücretsiz Teklif Alın!',
   subtitle = 'Aracınızın değerini öğrenmek için bizi arayın veya WhatsApp üzerinden ulaşın. 7/24 hizmetinizdeyiz.',
 }: CTAProps) {
-  const handleWhatsAppClick = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: `${siteData.googleAds.conversionId}/${siteData.googleAds.whatsappConversionLabel}`,
-      });
-    }
-    window.open(
-      `https://wa.me/${siteData.whatsapp}?text=${encodeURIComponent(
-        'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.'
-      )}`,
-      '_blank'
-    );
-  };
-
-  const handlePhoneClick = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: `${siteData.googleAds.conversionId}/${siteData.googleAds.phoneConversionLabel}`,
-      });
-    }
-    window.location.href = `tel:${siteData.phone.replace(/\s/g, '')}`;
-  };
-
   return (
     <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary-dark relative overflow-hidden">
       {/* Background Pattern */}
@@ -57,20 +35,22 @@ export default function CTA({
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={handlePhoneClick}
+            <ContactButton
+              type="phone"
+              position="cta"
               className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 font-bold px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-3 text-lg shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               <FaPhone className="text-xl" />
               {siteData.phone}
-            </button>
-            <button
-              onClick={handleWhatsAppClick}
+            </ContactButton>
+            <ContactButton
+              type="whatsapp"
+              position="cta"
               className="w-full sm:w-auto bg-whatsapp hover:bg-green-600 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-3 text-lg shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               <FaWhatsapp className="text-2xl" />
               WhatsApp ile Yaz
-            </button>
+            </ContactButton>
           </div>
 
           <p className="mt-6 text-white/70 text-sm">

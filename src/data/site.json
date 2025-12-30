@@ -8,8 +8,8 @@
   "email": "info@hasarliaracalim.com",
   "address": "Otoport Galericiler Sitesi, Esenyurt / İSTANBUL",
   "workingHours": "7/24 Hizmet",
-  "gaId": "G-XXXXXXXXXX",
-  "gtmId": "GTM-XXXXXXX",
+  "gaId": "G-T6NDEYLM4E",
+  "gtmId": "GTM-W7KQVQQ",
   "siteName": "Hasarlı Araç Alım Merkezi",
   "siteTitle": "Türkiye Geneli Hasarlı Araç Alımı - Nakit Ödeme",
   "siteDescription": "Türkiye'nin her yerinden hasarlı, kazalı, pert ve hurda araçlarınızı değerinde nakit olarak satın alıyoruz. Güvenli işlem, hızlı ödeme ve yerinden teslim alma avantajlarıyla.",
@@ -89,9 +89,9 @@
     "formConversionLabel": "XXXXXXXXX"
   },
   "gtm": {
-    "containerId": "GTM-XXXXXXX"
+    "containerId": "GTM-W7KQVQQ"
   },
   "analytics": {
-    "measurementId": "G-XXXXXXXXXX"
+    "measurementId": "G-T6NDEYLM4E"
   }
 }

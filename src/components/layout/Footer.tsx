@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactButton from '@/components/common/ContactButton';
 import siteData from '@/data/site.json';
 import servicesData from '@/data/services.json';
 import citiesData from '@/data/cities.json';
@@ -121,24 +122,24 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">İletişim</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+                <ContactButton
+                  type="phone"
+                  position="footer"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary transition-colors text-sm"
                 >
                   <FaPhone className="text-primary" />
                   {siteData.phone}
-                </a>
+                </ContactButton>
               </li>
               <li>
-                <a
-                  href={`https://wa.me/${siteData.whatsapp}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <ContactButton
+                  type="whatsapp"
+                  position="footer"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary transition-colors text-sm"
                 >
                   <WhatsAppIcon className="w-5 h-5 text-primary" />
                   WhatsApp İletişim
-                </a>
+                </ContactButton>
               </li>
               <li>
                 <a

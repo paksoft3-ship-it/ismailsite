@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactButton from '@/components/common/ContactButton';
 import siteData from '@/data/site.json';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
@@ -18,10 +19,6 @@ export default function Hero({
   backgroundImage = '/images/backgrounds/hasarli-hero.png',
   badgeText = 'Türkiye Geneli Hizmet'
 }: HeroProps) {
-
-  const whatsappLink = `https://wa.me/${siteData.whatsapp}?text=${encodeURIComponent(
-    'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.'
-  )}`;
 
   return (
     <section className="relative overflow-hidden bg-secondary">
@@ -62,21 +59,22 @@ export default function Hero({
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto">
-            <Link
-              href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+            <ContactButton
+              type="phone"
+              position="hero"
               className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-primary hover:bg-primary-dark px-8 text-base font-bold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               HEMEN FİYAT AL
               <span className="material-symbols-outlined ml-2">arrow_forward</span>
-            </Link>
-            <Link
-              href={whatsappLink}
-              target="_blank"
+            </ContactButton>
+            <ContactButton
+              type="whatsapp"
+              position="hero"
               className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 text-base font-bold transition-all shadow-lg shadow-green-900/20"
             >
               <WhatsAppIcon className="w-6 h-6 mr-2" color="white" />
               WhatsApp İle Gönder
-            </Link>
+            </ContactButton>
           </div>
 
           {/* Trust Indicators */}

@@ -10,6 +10,7 @@ import CTA from '@/components/sections/CTA';
 import Testimonials from '@/components/sections/Testimonials';
 import TrustBadges from '@/components/sections/TrustBadges';
 import CallbackRequest from '@/components/sections/CallbackRequest';
+import ContactButton from '@/components/common/ContactButton';
 import { FaWhatsapp, FaPhone, FaCheck, FaMapMarkerAlt } from 'react-icons/fa';
 
 interface Props {
@@ -56,9 +57,7 @@ export default async function SehirDetayPage({ params }: Props) {
     .slice(0, 6);
 
   const heroImage = city.heroImage || '/images/backgrounds/cities-hero.png';
-  const whatsappLink = `https://wa.me/${siteData.whatsapp}?text=${encodeURIComponent(
-    `Merhaba, ${city.name}'da hasarlı aracım için fiyat teklifi almak istiyorum.`
-  )}`;
+
 
   return (
     <>
@@ -101,21 +100,23 @@ export default async function SehirDetayPage({ params }: Props) {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto">
-              <Link
-                href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+              <ContactButton
+                type="phone"
+                position="city_page_hero"
                 className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-primary hover:bg-primary-dark px-8 text-base font-bold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 HEMEN FİYAT AL
                 <span className="material-symbols-outlined ml-2">arrow_forward</span>
-              </Link>
-              <Link
-                href={whatsappLink}
-                target="_blank"
+              </ContactButton>
+              <ContactButton
+                type="whatsapp"
+                position="city_page_hero"
+                whatsappMessage={`Merhaba, ${city.name}'da hasarlı aracım için fiyat teklifi almak istiyorum.`}
                 className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 text-base font-bold transition-all shadow-lg shadow-green-900/20"
               >
                 <span className="material-symbols-outlined mr-2">chat</span>
                 WhatsApp İle Gönder
-              </Link>
+              </ContactButton>
             </div>
 
             {/* Trust Indicators */}
@@ -234,24 +235,23 @@ export default async function SehirDetayPage({ params }: Props) {
                     {city.name}&apos;da hasarlı aracınız için hemen fiyat teklifi alın.
                   </p>
                   <div className="space-y-3">
-                    <a
-                      href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+                    <ContactButton
+                      type="phone"
+                      position="city_page_sidebar"
                       className="w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
                     >
                       <FaPhone />
                       {siteData.phone}
-                    </a>
-                    <a
-                      href={`https://wa.me/${siteData.whatsapp}?text=${encodeURIComponent(
-                        `Merhaba, ${city.name}'da hasarlı aracım için fiyat teklifi almak istiyorum.`
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    </ContactButton>
+                    <ContactButton
+                      type="whatsapp"
+                      position="city_page_sidebar"
+                      whatsappMessage={`Merhaba, ${city.name}'da hasarlı aracım için fiyat teklifi almak istiyorum.`}
                       className="w-full bg-whatsapp hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
                     >
                       <FaWhatsapp className="text-xl" />
                       WhatsApp
-                    </a>
+                    </ContactButton>
                   </div>
                 </div>
 

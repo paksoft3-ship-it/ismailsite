@@ -3,8 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactButton from '@/components/common/ContactButton';
 import siteData from '@/data/site.json';
 import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaShieldAlt, FaTruck } from 'react-icons/fa';
+import { trackLead } from '@/lib/tracking/lead';
 
 export default function IletisimPage() {
   const [formData, setFormData] = useState({
@@ -30,11 +32,10 @@ export default function IletisimPage() {
     setIsSubmitting(true);
 
     // Track form submission
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: `${siteData.googleAds.conversionId}/${siteData.googleAds.formConversionLabel}`,
-      });
-    }
+    trackLead({
+      type: 'form_submit',
+      source: 'contact_page_form',
+    });
 
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -46,20 +47,7 @@ export default function IletisimPage() {
     setIsSubmitted(true);
   };
 
-  const handleWhatsAppClick = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: `${siteData.googleAds.conversionId}/${siteData.googleAds.whatsappConversionLabel}`,
-      });
-    }
-    const message = formData.vehicleInfo
-      ? `Merhaba, ${formData.vehicleInfo} aracım için fiyat teklifi almak istiyorum.`
-      : 'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.';
-    window.open(
-      `https://wa.me/${siteData.whatsapp}?text=${encodeURIComponent(message)}`,
-      '_blank'
-    );
-  };
+
 
   return (
     <>
@@ -103,20 +91,22 @@ export default function IletisimPage() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto">
-              <Link
-                href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+              <ContactButton
+                type="phone"
+                position="contact_page_hero"
                 className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-primary hover:bg-primary-dark px-8 text-base font-bold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 HEMEN FİYAT AL
                 <span className="material-symbols-outlined ml-2">arrow_forward</span>
-              </Link>
-              <button
-                onClick={handleWhatsAppClick}
+              </ContactButton>
+              <ContactButton
+                type="whatsapp"
+                position="contact_page_hero"
                 className="flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 text-base font-bold transition-all shadow-lg shadow-green-900/20"
               >
                 <span className="material-symbols-outlined mr-2">chat</span>
                 WhatsApp İle Gönder
-              </button>
+              </ContactButton>
             </div>
 
             {/* Trust Indicators */}
@@ -163,8 +153,9 @@ export default function IletisimPage() {
 
               <div className="space-y-6">
                 {/* Phone */}
-                <a
-                  href={`tel:${siteData.phone.replace(/\s/g, '')}`}
+                <ContactButton
+                  type="phone"
+                  position="contact_page_info"
                   className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -175,13 +166,12 @@ export default function IletisimPage() {
                     <p className="text-primary font-medium">{siteData.phone}</p>
                     <p className="text-gray-500 text-sm">7/24 ulaşabilirsiniz</p>
                   </div>
-                </a>
+                </ContactButton>
 
                 {/* WhatsApp */}
-                <a
-                  href={`https://wa.me/${siteData.whatsapp}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <ContactButton
+                  type="whatsapp"
+                  position="contact_page_info"
                   className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                 >
                   <div className="w-12 h-12 bg-whatsapp/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -192,7 +182,7 @@ export default function IletisimPage() {
                     <p className="text-whatsapp font-medium">Hemen Yazın</p>
                     <p className="text-gray-500 text-sm">Anında cevap alın</p>
                   </div>
-                </a>
+                </ContactButton>
 
                 {/* Email */}
                 <a
@@ -254,13 +244,17 @@ export default function IletisimPage() {
                     <p className="text-gray-600 mb-6">
                       En kısa sürede sizinle iletişime geçeceğiz.
                     </p>
-                    <button
-                      onClick={handleWhatsAppClick}
+                    <ContactButton
+                      type="whatsapp"
+                      position="contact_page_form_success"
+                      whatsappMessage={formData.vehicleInfo
+                        ? `Merhaba, ${formData.vehicleInfo} aracım için fiyat teklifi almak istiyorum.`
+                        : 'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.'}
                       className="btn-whatsapp"
                     >
                       <FaWhatsapp className="text-xl" />
                       Hemen WhatsApp&apos;tan Yazın
-                    </button>
+                    </ContactButton>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -376,14 +370,17 @@ export default function IletisimPage() {
                           </>
                         )}
                       </button>
-                      <button
-                        type="button"
-                        onClick={handleWhatsAppClick}
+                      <ContactButton
+                        type="whatsapp"
+                        position="contact_page_form"
+                        whatsappMessage={formData.vehicleInfo
+                          ? `Merhaba, ${formData.vehicleInfo} aracım için fiyat teklifi almak istiyorum.`
+                          : 'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.'}
                         className="btn-whatsapp"
                       >
                         <FaWhatsapp className="text-xl" />
                         WhatsApp
-                      </button>
+                      </ContactButton>
                     </div>
                   </form>
                 )}

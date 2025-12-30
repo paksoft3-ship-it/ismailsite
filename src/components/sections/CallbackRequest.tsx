@@ -7,6 +7,8 @@
 import { useState, useEffect } from 'react';
 import siteConfig from '@/data/site.json';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { trackLead } from '@/lib/tracking/lead';
+import ContactButton from '@/components/common/ContactButton';
 
 export default function CallbackRequest() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,12 +52,13 @@ export default function CallbackRequest() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Track conversion
-    if (typeof window !== 'undefined') {
-      (window as any).trackFormSubmit?.();
-    }
+    // Track conversion - Form Submit ONLY
+    trackLead({
+      type: 'form_submit',
+      source: 'callback_popup_form',
+    });
 
-    // Send directly to WhatsApp with form data
+    // Send directly to WhatsApp with form data - NO extra tracking
     const message = `Merhaba, beni aramanızı istiyorum.%0A%0AAdım: ${formData.name}%0ATelefon: ${formData.phone}`;
     window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${message}`, '_blank');
 
@@ -65,6 +68,12 @@ export default function CallbackRequest() {
   };
 
   const handleDirectWhatsApp = () => {
+    // This is a direct click on a "WhatsApp" button/action, so we track it as whatsapp_call
+    trackLead({
+      type: 'whatsapp_call',
+      source: 'callback_popup_direct',
+    });
+
     const message = 'Merhaba, hasarlı aracım için fiyat teklifi almak istiyorum.';
     window.open(`https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(message)}`, '_blank');
     setIsOpen(false);
@@ -150,13 +159,14 @@ export default function CallbackRequest() {
           {/* Alternative Options */}
           <div className="mt-6 pt-6 border-t border-gray-100">
             <p className="text-sm text-gray-400 text-center mb-4">veya hemen arayın</p>
-            <a
-              href={`tel:${siteConfig.contact.phone}`}
+            <ContactButton
+              type="phone"
+              position="callback_popup_phone"
               className="flex items-center justify-center gap-2 w-full h-12 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-all"
             >
               <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
               {siteConfig.contact.phone}
-            </a>
+            </ContactButton>
           </div>
         </div>
       </div>

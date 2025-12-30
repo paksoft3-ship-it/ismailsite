@@ -1,31 +1,6 @@
 {
   "pages": {
-    "/_app": [
-      "static/chunks/31f94_next_dist_compiled_0a971166._.js",
-      "static/chunks/31f94_next_dist_shared_lib_f928a1e7._.js",
-      "static/chunks/31f94_next_dist_client_98c08bd4._.js",
-      "static/chunks/31f94_next_dist_ad0a40cd._.js",
-      "static/chunks/31f94_next_app_2b6056f2.js",
-      "static/chunks/[next]_entry_page-loader_ts_3e18c3f4._.js",
-      "static/chunks/31f94_react-dom_aee4affd._.js",
-      "static/chunks/31f94_6da32d9c._.js",
-      "static/chunks/[root-of-the-server]__8837ac80._.js",
-      "static/chunks/ismail_pages__app_2da965e7._.js",
-      "static/chunks/turbopack-ismail_pages__app_e5e058bc._.js"
-    ],
-    "/_error": [
-      "static/chunks/31f94_next_dist_compiled_0a971166._.js",
-      "static/chunks/31f94_next_dist_shared_lib_8deb1e5d._.js",
-      "static/chunks/31f94_next_dist_client_98c08bd4._.js",
-      "static/chunks/31f94_next_dist_32663c40._.js",
-      "static/chunks/31f94_next_error_9522ce33.js",
-      "static/chunks/[next]_entry_page-loader_ts_4c729af2._.js",
-      "static/chunks/31f94_react-dom_aee4affd._.js",
-      "static/chunks/31f94_6da32d9c._.js",
-      "static/chunks/[root-of-the-server]__1d659826._.js",
-      "static/chunks/ismail_pages__error_2da965e7._.js",
-      "static/chunks/turbopack-ismail_pages__error_778a7e7d._.js"
-    ]
+    "/_app": []
   },
   "devFiles": [],
   "polyfillFiles": [

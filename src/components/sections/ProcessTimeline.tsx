@@ -3,6 +3,8 @@
 // Usage: Add to homepage, about page, or service detail pages
 
 'use client';
+import siteData from '@/data/site.json';
+import ContactButton from '@/components/common/ContactButton';
 
 export default function ProcessTimeline() {
   const steps = [
@@ -76,15 +78,13 @@ export default function ProcessTimeline() {
             {steps.map((step, index) => (
               <div
                 key={step.number}
-                className={`relative flex items-start gap-6 md:gap-12 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`relative flex items-start gap-6 md:gap-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
               >
                 {/* Content */}
                 <div className={`flex-1 ml-20 md:ml-0 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                  <div className={`bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all inline-block ${
-                    index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
-                  }`}>
+                  <div className={`bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all inline-block ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
+                    }`}>
                     <div className={`flex items-center gap-3 mb-3 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                       <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-full">
                         {step.time}
@@ -112,13 +112,14 @@ export default function ProcessTimeline() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-gray-500 mb-4">Ortalama işlem süresi: <span className="font-bold text-primary">2-4 saat</span></p>
-          <a
-            href="tel:+905551234567"
+          <ContactButton
+            type="phone"
+            position="process_timeline"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-lg transition-all"
           >
             <span className="material-symbols-outlined">call</span>
             Hemen Başlayın
-          </a>
+          </ContactButton>
         </div>
       </div>
     </section>
