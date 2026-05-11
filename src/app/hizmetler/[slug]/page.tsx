@@ -11,6 +11,7 @@ import TrustBadges from '@/components/sections/TrustBadges';
 import CallbackRequest from '@/components/sections/CallbackRequest';
 import ContactButton from '@/components/common/ContactButton';
 import { FaWhatsapp, FaPhone, FaCheck } from 'react-icons/fa';
+import ServiceSchema from '@/components/seo/ServiceSchema';
 
 interface Props {
   params: Promise<{ slug: string }>;
