@@ -5,11 +5,33 @@ import siteData from '@/data/site.json';
 import Features from '@/components/sections/Features';
 import CTA from '@/components/sections/CTA';
 import ContactButton from '@/components/common/ContactButton';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { FaCheck, FaUsers, FaCar, FaHandshake, FaAward } from 'react-icons/fa';
 
+const BASE_URL = 'https://hasarliaracnoktasi.com';
+
 export const metadata: Metadata = {
-  title: 'Hakkımızda - Hasarlı Araç Alım Merkezi',
-  description: 'Türkiye genelinde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız. Yıllara dayanan tecrübe, binlerce mutlu müşteri.',
+  title: 'Hakkımızda | Hasarlı Araç Noktası',
+  description:
+    '2009\'dan bu yana Türkiye genelinde 81 ilde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız. 15.000+ alınan araç, 10.000+ mutlu müşteri.',
+  alternates: {
+    canonical: `${BASE_URL}/hakkimizda`,
+  },
+  openGraph: {
+    title: 'Hakkımızda | Hasarlı Araç Noktası',
+    description:
+      '2009\'dan bu yana Türkiye genelinde 81 ilde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız.',
+    url: `${BASE_URL}/hakkimizda`,
+    siteName: 'Hasarlı Araç Noktası',
+    locale: 'tr_TR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hakkımızda | Hasarlı Araç Noktası',
+    description:
+      '2009\'dan bu yana Türkiye genelinde hasarlı araç alımında güvenilir çözüm ortağınız.',
+  },
 };
 
 const stats = [
@@ -39,10 +61,15 @@ const values = [
 ];
 
 export default function HakkimizdaPage() {
-
-
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Ana Sayfa', url: BASE_URL },
+          { name: 'Hakkımızda', url: `${BASE_URL}/hakkimizda` },
+        ]}
+      />
+
       {/* Hero Section - Matching PageHero Design Exactly */}
       <section className="relative overflow-hidden bg-secondary">
         {/* Background Image */}

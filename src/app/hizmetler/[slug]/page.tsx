@@ -12,6 +12,9 @@ import CallbackRequest from '@/components/sections/CallbackRequest';
 import ContactButton from '@/components/common/ContactButton';
 import { FaWhatsapp, FaPhone, FaCheck } from 'react-icons/fa';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+
+const BASE_URL = 'https://hasarliaracnoktasi.com';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -36,7 +39,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    alternates: {
+      canonical: `${BASE_URL}/hizmetler/${slug}`,
+    },
     openGraph: {
+      title: service.metaTitle,
+      description: service.metaDescription,
+      url: `${BASE_URL}/hizmetler/${slug}`,
+      siteName: 'Hasarlı Araç Noktası',
+      locale: 'tr_TR',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
       title: service.metaTitle,
       description: service.metaDescription,
     },
@@ -55,10 +70,17 @@ export default async function HizmetDetayPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Ana Sayfa', url: BASE_URL },
+          { name: 'Hizmetler', url: `${BASE_URL}/hizmetler` },
+          { name: service.shortTitle, url: `${BASE_URL}/hizmetler/${service.slug}` },
+        ]}
+      />
       <ServiceSchema
         name={service.title}
         description={service.metaDescription}
-        url={`https://hasarliaracalim.com/hizmetler/${service.slug}`}
+        url={`${BASE_URL}/hizmetler/${service.slug}`}
         faqs={service.faq}
       />
       {/* Hero Section - Matching PageHero Design Exactly */}

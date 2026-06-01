@@ -11,7 +11,10 @@ import Testimonials from '@/components/sections/Testimonials';
 import TrustBadges from '@/components/sections/TrustBadges';
 import CallbackRequest from '@/components/sections/CallbackRequest';
 import ContactButton from '@/components/common/ContactButton';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { FaWhatsapp, FaPhone, FaCheck, FaMapMarkerAlt } from 'react-icons/fa';
+
+const BASE_URL = 'https://hasarliaracnoktasi.com';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -36,7 +39,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: city.metaTitle,
     description: city.metaDescription,
+    alternates: {
+      canonical: `${BASE_URL}/sehirler/${slug}`,
+    },
     openGraph: {
+      title: city.metaTitle,
+      description: city.metaDescription,
+      url: `${BASE_URL}/sehirler/${slug}`,
+      siteName: 'Hasarlı Araç Noktası',
+      locale: 'tr_TR',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
       title: city.metaTitle,
       description: city.metaDescription,
     },
@@ -59,8 +74,38 @@ export default async function SehirDetayPage({ params }: Props) {
   const heroImage = city.heroImage || '/images/backgrounds/cities-hero.png';
 
 
+  const cityLocalBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: `Hasarlı Araç Noktası — ${city.name}`,
+    description: city.metaDescription,
+    url: `${BASE_URL}/sehirler/${city.slug}`,
+    telephone: siteData.phone,
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      containedInPlace: {
+        '@type': 'Country',
+        name: 'Turkey',
+      },
+    },
+    priceRange: '₺₺₺',
+  };
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Ana Sayfa', url: BASE_URL },
+          { name: 'Şehirler', url: `${BASE_URL}/sehirler` },
+          { name: city.name, url: `${BASE_URL}/sehirler/${city.slug}` },
+        ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(cityLocalBusinessSchema) }}
+      />
+
       {/* Hero Section - Matching PageHero Design Exactly */}
       <section className="relative overflow-hidden bg-secondary">
         {/* Background Image */}
@@ -307,30 +352,6 @@ export default async function SehirDetayPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Schema.org Local Business Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
-            name: `Hasarlı Araç Alım - ${city.name}`,
-            description: city.metaDescription,
-            url: `https://hasarliaracalim.com/sehirler/${city.slug}`,
-            telephone: siteData.phone,
-            areaServed: {
-              '@type': 'City',
-              name: city.name,
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: '100000',
-            },
-            priceRange: '₺₺₺',
-          }),
-        }}
-      />
 
       <TrustBadges />
       <CallbackRequest />

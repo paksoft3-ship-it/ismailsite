@@ -4,11 +4,31 @@ import PageHero from '@/components/common/PageHero';
 import ContactButton from '@/components/common/ContactButton';
 import blogData from '@/data/blog.json';
 import type { Metadata } from 'next';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+
+const BASE_URL = 'https://hasarliaracnoktasi.com';
 
 export const metadata: Metadata = {
-    title: 'Blog | Hasarlı Araç Rehberi',
+    title: 'Blog | Hasarlı Araç Rehberi ve Bilgilendirme',
     description:
-        'Hasarlı araç satışı, pert araç değerleme, sigorta süreçleri ve daha fazlası hakkında bilgilendirici yazılar.',
+        'Hasarlı araç satışı, pert araç değerleme, kazalı araç alımı, sigorta süreçleri ve tramer sorgulama hakkında bilgilendirici rehber yazıları.',
+    alternates: {
+        canonical: `${BASE_URL}/blog`,
+    },
+    openGraph: {
+        title: 'Blog | Hasarlı Araç Noktası',
+        description:
+            'Hasarlı araç satışı, pert araç değerleme, kazalı araç alımı ve sigorta süreçleri hakkında bilgilendirici yazılar.',
+        url: `${BASE_URL}/blog`,
+        siteName: 'Hasarlı Araç Noktası',
+        locale: 'tr_TR',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Blog | Hasarlı Araç Noktası',
+        description: 'Hasarlı araç satışı ve değerleme hakkında bilgilendirici rehber yazıları.',
+    },
 };
 
 export default function BlogPage() {
@@ -16,6 +36,12 @@ export default function BlogPage() {
 
     return (
         <>
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Ana Sayfa', url: BASE_URL },
+                    { name: 'Blog', url: `${BASE_URL}/blog` },
+                ]}
+            />
             <PageHero
                 title="Blog"
                 subtitle="Hasarlı araç alım satım süreçleri, sigorta işlemleri ve araç değerleme hakkında faydalı bilgiler"

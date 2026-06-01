@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero';
+import HowToSchema from '@/components/seo/HowToSchema';
 import NewsMarquee from '@/components/sections/NewsMarquee';
 import Features from '@/components/sections/Features';
 import HowItWorks from '@/components/sections/HowItWorks';
@@ -19,6 +20,7 @@ import ServiceAreas from '@/components/sections/ServiceAreas';
 export default function HomePage() {
   return (
     <>
+      <HowToSchema />
       <Hero />
       <NewsMarquee />
       <Features />
