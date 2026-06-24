@@ -5,7 +5,7 @@ import blogData from '@/data/blog.json';
 import type { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,13 +24,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: post.metaKeywords,
     alternates: {
-      canonical: `${BASE_URL}/blog/${slug}`,
+      canonical: post.canonical || `${BASE_URL}/blog/${slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `${BASE_URL}/blog/${slug}`,
+      url: post.ogUrl || `${BASE_URL}/blog/${slug}`,
       siteName: 'Hasarlı Araç Noktası',
       locale: 'tr_TR',
       type: 'article',

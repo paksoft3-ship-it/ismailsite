@@ -20,7 +20,7 @@ export default function ServiceSchema({ name, description, url, faqs }: ServiceS
     provider: {
       '@type': 'LocalBusiness',
       name: 'Hasarlı Araç Noktası',
-      url: 'https://hasarliaracnoktasi.com',
+      url: 'https://www.hasarliaracnoktasi.com',
     },
   };
 

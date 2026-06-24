@@ -9,7 +9,7 @@ import FloatingActions from '@/components/common/FloatingActions';
 import GoogleTagManager from '@/components/seo/GoogleTagManager';
 import siteData from '@/data/site.json';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -25,19 +25,15 @@ export const metadata: Metadata = {
   },
   description: siteData.description,
   keywords: [
-    'hasarlı araç alım',
-    'kazalı araç satış',
-    'hurda araç fiyatları',
-    'pert araç değerleme',
-    'hasarlı araba alınır',
-    'kazalı araba satın alma',
-    'İstanbul hasarlı araç',
-    'Ankara kazalı araç',
-    'araç alım satım',
-    'hasar kaydı olan araç',
     'hasarlı araç alan',
-    'pert araç alım',
-    'kazalı araç satmak istiyorum',
+    'kazalı araç alan',
+    'hurda araç alımı',
+    'pert araç alan',
+    'hasarlı araç satmak',
+    'kazalı araç satmak',
+    'hasarlı oto alan',
+    'hasarlı araba alan firmalar',
+    'ağır hasarlı araç alan',
   ],
   authors: [{ name: siteData.name }],
   creator: siteData.name,
@@ -103,7 +99,7 @@ const organizationSchema = {
     height: 120,
   },
   description: siteData.description,
-  foundingDate: '2009',
+  foundingDate: '2022',
   telephone: siteData.phone,
   email: siteData.email,
   address: {

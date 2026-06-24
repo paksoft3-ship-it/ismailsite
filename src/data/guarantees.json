@@ -39,15 +39,8 @@
   ],
   "stats": [
     {
-      "id": 1,
-      "value": 10000,
-      "suffix": "+",
-      "label": "Mutlu Müşteri",
-      "icon": "groups"
-    },
-    {
       "id": 2,
-      "value": 15000,
+      "value": 10000,
       "suffix": "+",
       "label": "Alınan Araç",
       "icon": "directions_car"
@@ -61,7 +54,7 @@
     },
     {
       "id": 4,
-      "value": 15,
+      "value": 4,
       "suffix": "+",
       "label": "Yıllık Tecrübe",
       "icon": "emoji_events"

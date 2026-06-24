@@ -8,8 +8,20 @@ import CallbackRequest from '@/components/sections/CallbackRequest';
 import Testimonials from '@/components/sections/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'Hizmetlerimiz - Hasarlı Araç Alım Hizmetleri',
-  description: 'Hasarlı, kazalı, hurda, pert, motor arızalı ve çekme belgeli araç alım hizmetleri. Her türlü sorunlu aracınız için en iyi fiyat teklifini alın.',
+  title: 'Hizmetlerimiz | Hasarlı, Kazalı, Hurda & Pert Araç Alımı',
+  description: 'Hasarlı, kazalı, hurda, pert, motor arızalı ve çekme belgeli araç alım hizmetleri. Her durumdaki aracınız için en yüksek fiyat teklifini alın.',
+  keywords: 'hasarlı araç alım hizmetleri, kazalı araç alan, hurda araç alımı, pert araç alan, motor arızalı araç alan, çekme belgeli araç alan',
+  alternates: {
+    canonical: 'https://www.hasarliaracnoktasi.com/hizmetler',
+  },
+  openGraph: {
+    title: 'Hizmetlerimiz | Hasarlı, Kazalı, Hurda & Pert Araç Alımı',
+    description: 'Hasarlı, kazalı, hurda, pert, motor arızalı ve çekme belgeli araç alım hizmetleri. Her durumdaki aracınız için en yüksek fiyat teklifini alın.',
+    url: 'https://www.hasarliaracnoktasi.com/hizmetler',
+    siteName: 'Hasarlı Araç Noktası',
+    locale: 'tr_TR',
+    type: 'website',
+  },
 };
 
 const colorClasses: Record<string, { bg: string; text: string; border: string }> = {

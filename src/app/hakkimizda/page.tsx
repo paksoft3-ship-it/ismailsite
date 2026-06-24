@@ -6,21 +6,22 @@ import Features from '@/components/sections/Features';
 import CTA from '@/components/sections/CTA';
 import ContactButton from '@/components/common/ContactButton';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
-import { FaCheck, FaUsers, FaCar, FaHandshake, FaAward } from 'react-icons/fa';
+import { FaCheck, FaCar, FaHandshake, FaAward } from 'react-icons/fa';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 export const metadata: Metadata = {
-  title: 'Hakkımızda | Hasarlı Araç Noktası',
+  title: 'Hakkımızda',
   description:
-    '2009\'dan bu yana Türkiye genelinde 81 ilde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız. 15.000+ alınan araç, 10.000+ mutlu müşteri.',
+    '2022\'den bu yana Türkiye genelinde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız. 10.000+ alınan araç, aynı gün nakit ödeme.',
+  keywords: 'hasarlı araç alım firması, güvenilir araç alan, hasarlı araç alan şirket, hakkımızda',
   alternates: {
     canonical: `${BASE_URL}/hakkimizda`,
   },
   openGraph: {
-    title: 'Hakkımızda | Hasarlı Araç Noktası',
+    title: 'Hakkımızda | Hasarlı Araç Alım Merkezi',
     description:
-      '2009\'dan bu yana Türkiye genelinde 81 ilde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız.',
+      '2022\'den bu yana Türkiye genelinde 81 ilde hasarlı, kazalı, pert ve hurda araç alımında güvenilir çözüm ortağınız.',
     url: `${BASE_URL}/hakkimizda`,
     siteName: 'Hasarlı Araç Noktası',
     locale: 'tr_TR',
@@ -28,17 +29,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hakkımızda | Hasarlı Araç Noktası',
+    title: 'Hakkımızda | Hasarlı Araç Alım Merkezi',
     description:
-      '2009\'dan bu yana Türkiye genelinde hasarlı araç alımında güvenilir çözüm ortağınız.',
+      '2022\'den bu yana Türkiye genelinde hasarlı araç alımında güvenilir çözüm ortağınız.',
   },
 };
 
 const stats = [
-  { icon: FaUsers, value: '10.000+', label: 'Mutlu Müşteri' },
-  { icon: FaCar, value: '15.000+', label: 'Alınan Araç' },
+  { icon: FaCar, value: '10.000+', label: 'Alınan Araç' },
   { icon: FaHandshake, value: '81', label: 'İl Hizmeti' },
-  { icon: FaAward, value: '15+', label: 'Yıllık Tecrübe' },
+  { icon: FaAward, value: '4+', label: 'Yıllık Tecrübe' },
 ];
 
 const values = [
@@ -94,7 +94,7 @@ export default function HakkimizdaPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
               </span>
-              <span className="text-primary text-xs md:text-sm font-bold uppercase tracking-wider">15+ Yıllık Tecrübe</span>
+              <span className="text-primary text-xs md:text-sm font-bold uppercase tracking-wider">4+ Yıllık Tecrübe</span>
             </div>
 
             {/* Title */}
@@ -105,7 +105,7 @@ export default function HakkimizdaPage() {
             {/* Subtitle */}
             <p className="text-gray-300 text-lg md:text-xl font-medium leading-relaxed max-w-xl">
               Türkiye genelinde hasarlı araç alımında güvenilir çözüm ortağınız.
-              15 yılı aşkın tecrübemiz ve binlerce mutlu müşterimizle hizmetinizdeyiz.
+              4 yılı aşkın tecrübemiz ve binlerce mutlu müşterimizle hizmetinizdeyiz.
             </p>
 
             {/* Action Buttons */}
@@ -187,7 +187,7 @@ export default function HakkimizdaPage() {
                 Hasarlı Araç Alımında Türkiye&apos;nin Güvenilir Adresi
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                2009 yılından bu yana hasarlı, kazalı, pert ve hurda araç alım satım sektöründe
+                2022 yılından bu yana hasarlı, kazalı, pert ve hurda araç alım satım sektöründe
                 faaliyet gösteriyoruz. Türkiye genelinde 81 ilde hizmet ağımız ile müşterilerimize
                 en kaliteli ve güvenilir hizmeti sunmayı hedefliyoruz.
               </p>

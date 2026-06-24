@@ -3,7 +3,7 @@ import blogData from '@/data/blog.json';
 import citiesData from '@/data/cities.json';
 import servicesData from '@/data/services.json';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

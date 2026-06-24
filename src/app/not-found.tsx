@@ -1,4 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Sayfa Bulunamadı',
+  description:
+    'Aradığınız sayfa bulunamadı. Ana sayfaya dönerek hasarlı, kazalı, hurda ve pert araç alım hizmetlerimize ulaşabilirsiniz.',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function NotFound() {
   return (

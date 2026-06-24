@@ -8,8 +8,20 @@ import CallbackRequest from '@/components/sections/CallbackRequest';
 import TrustBadges from '@/components/sections/TrustBadges';
 
 export const metadata: Metadata = {
-  title: 'Hizmet Verdiğimiz Şehirler - Türkiye Geneli Hasarlı Araç Alım',
-  description: 'Türkiye genelinde 81 ilde hasarlı, kazalı, hurda ve pert araç alım hizmeti veriyoruz. Bulunduğunuz şehirde ücretsiz ekspertiz ve aynı gün ödeme.',
+  title: 'Hizmet Verdiğimiz Şehirler | Türkiye Geneli Araç Alımı',
+  description: 'Türkiye genelinde hasarlı, kazalı, hurda ve pert araç alım hizmeti. Bulunduğunuz şehirde ücretsiz ekspertiz, ücretsiz çekici ve aynı gün nakit ödeme.',
+  keywords: 'şehirler hasarlı araç alan, türkiye geneli araç alımı, il il hasarlı araç alan, hasarlı araç alan şehirler',
+  alternates: {
+    canonical: 'https://www.hasarliaracnoktasi.com/sehirler',
+  },
+  openGraph: {
+    title: 'Hizmet Verdiğimiz Şehirler | Türkiye Geneli Araç Alımı',
+    description: 'Türkiye genelinde hasarlı, kazalı, hurda ve pert araç alım hizmeti. Bulunduğunuz şehirde ücretsiz ekspertiz, ücretsiz çekici ve aynı gün nakit ödeme.',
+    url: 'https://www.hasarliaracnoktasi.com/sehirler',
+    siteName: 'Hasarlı Araç Noktası',
+    locale: 'tr_TR',
+    type: 'website',
+  },
 };
 
 // Group cities by region

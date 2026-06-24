@@ -6,19 +6,20 @@ import Testimonials from '@/components/sections/Testimonials';
 import CallbackRequest from '@/components/sections/CallbackRequest';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 export const metadata: Metadata = {
-  title: 'Sıkça Sorulan Sorular | Hasarlı Araç Alım',
+  title: 'Sıkça Sorulan Sorular | Hasarlı Araç Alımı',
   description:
-    'Hasarlı araç alım satım süreci hakkında en çok merak edilen sorular: ödeme, çekici, ekspertiz, pert araç ve daha fazlası.',
+    'Hasarlı araç alım süreci hakkında merak edilenler: ödeme, ücretsiz çekici, ekspertiz, pert ve hurda araç işlemleri ve daha fazlası.',
+  keywords: 'hasarlı araç soruları, hasarlı araç satış süreci, pert araç sorular, hurda araç işlemleri',
   alternates: {
     canonical: `${BASE_URL}/sss`,
   },
   openGraph: {
-    title: 'Sıkça Sorulan Sorular | Hasarlı Araç Noktası',
+    title: 'Sıkça Sorulan Sorular | Hasarlı Araç Alımı',
     description:
-      'Hasarlı araç satış sürecinde merak ettiğiniz tüm sorular: ödeme zamanı, çekici ücreti, ekspertiz, pert araç ve hurda araç alımı hakkında bilgi.',
+      'Hasarlı araç alım süreci hakkında merak edilenler: ödeme, ücretsiz çekici, ekspertiz, pert ve hurda araç işlemleri ve daha fazlası.',
     url: `${BASE_URL}/sss`,
     siteName: 'Hasarlı Araç Noktası',
     locale: 'tr_TR',
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sıkça Sorulan Sorular | Hasarlı Araç Noktası',
-    description: 'Hasarlı araç satış sürecinde merak ettiğiniz tüm soruların cevapları.',
+    title: 'Sıkça Sorulan Sorular | Hasarlı Araç Alımı',
+    description: 'Hasarlı araç alım süreci hakkında merak edilenler: ödeme, çekici, ekspertiz, pert ve hurda araç işlemleri.',
   },
 };
 

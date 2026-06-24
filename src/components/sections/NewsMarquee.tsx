@@ -11,7 +11,7 @@ export default function NewsMarquee() {
 
   const announcements = [
     '🎉 Ocak Ayına Özel %10 Ekstra Değerleme!',
-    '🚗 15.000+ Araç Alım Tecrübesi',
+    '🚗 10.000+ Araç Alım Tecrübesi',
     '💰 Aynı Gün Nakit Ödeme Garantisi',
     '🏆 Türkiye\'nin 1 Numaralı Hasarlı Araç Alım Merkezi',
     '📞 7/24 Ücretsiz Danışma Hattı',

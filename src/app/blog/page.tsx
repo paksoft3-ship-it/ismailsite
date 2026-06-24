@@ -6,12 +6,13 @@ import blogData from '@/data/blog.json';
 import type { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 export const metadata: Metadata = {
     title: 'Blog | Hasarlı Araç Rehberi ve Bilgilendirme',
     description:
         'Hasarlı araç satışı, pert araç değerleme, kazalı araç alımı, sigorta süreçleri ve tramer sorgulama hakkında bilgilendirici rehber yazıları.',
+    keywords: 'hasarlı araç blog, araç satış rehberi, pert araç bilgi, hasarlı araç makaleleri',
     alternates: {
         canonical: `${BASE_URL}/blog`,
     },

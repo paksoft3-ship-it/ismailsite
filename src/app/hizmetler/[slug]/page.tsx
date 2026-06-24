@@ -14,7 +14,7 @@ import { FaWhatsapp, FaPhone, FaCheck } from 'react-icons/fa';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -39,13 +39,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    keywords: service.metaKeywords,
     alternates: {
-      canonical: `${BASE_URL}/hizmetler/${slug}`,
+      canonical: service.canonical || `${BASE_URL}/hizmetler/${slug}`,
     },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `${BASE_URL}/hizmetler/${slug}`,
+      url: service.ogUrl || `${BASE_URL}/hizmetler/${slug}`,
       siteName: 'Hasarlı Araç Noktası',
       locale: 'tr_TR',
       type: 'website',
@@ -184,7 +185,7 @@ export default async function HizmetDetayPage({ params }: Props) {
             {/* Main Content */}
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold text-secondary mb-6">
-                {service.title}
+                {service.h2Intro || service.title}
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 {service.content.intro}

@@ -19,7 +19,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'Applebot', allow: '/' },
       { userAgent: 'cohere-ai', allow: '/' },
     ],
-    sitemap: 'https://hasarliaracnoktasi.com/sitemap.xml',
-    host: 'https://hasarliaracnoktasi.com',
+    sitemap: 'https://www.hasarliaracnoktasi.com/sitemap.xml',
+    host: 'https://www.hasarliaracnoktasi.com',
   };
 }

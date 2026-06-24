@@ -14,7 +14,7 @@ import ContactButton from '@/components/common/ContactButton';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { FaWhatsapp, FaPhone, FaCheck, FaMapMarkerAlt } from 'react-icons/fa';
 
-const BASE_URL = 'https://hasarliaracnoktasi.com';
+const BASE_URL = 'https://www.hasarliaracnoktasi.com';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -39,13 +39,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: city.metaTitle,
     description: city.metaDescription,
+    keywords: city.metaKeywords,
     alternates: {
-      canonical: `${BASE_URL}/sehirler/${slug}`,
+      canonical: city.canonical || `${BASE_URL}/sehirler/${slug}`,
     },
     openGraph: {
       title: city.metaTitle,
       description: city.metaDescription,
-      url: `${BASE_URL}/sehirler/${slug}`,
+      url: city.ogUrl || `${BASE_URL}/sehirler/${slug}`,
       siteName: 'Hasarlı Araç Noktası',
       locale: 'tr_TR',
       type: 'website',
