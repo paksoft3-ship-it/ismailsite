@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { and, desc, gte, lt, inArray, isNotNull, sql } from "drizzle-orm";
+import { and, desc, eq, gte, lt, inArray, isNotNull, sql } from "drizzle-orm";
 import { isAdminAuthed } from "@/lib/admin-auth";
 import { isDbConfigured, requireDb } from "@/db";
 import { clickEvents } from "@/db/schema";
@@ -100,7 +100,13 @@ export default async function AdminClicksPage({
     lt(clickEvents.occurredAt, range.to),
   );
 
-  const [byName, agg, ipGroups, rows] = await Promise.all([
+  const visitWhere = and(
+    eq(clickEvents.name, "page_view"),
+    gte(clickEvents.occurredAt, range.from),
+    lt(clickEvents.occurredAt, range.to),
+  );
+
+  const [byName, agg, ipGroups, rows, visitAgg] = await Promise.all([
     db
       .select({ name: clickEvents.name, c: sql<number>`count(*)::int` })
       .from(clickEvents)
@@ -121,7 +127,19 @@ export default async function AdminClicksPage({
       .groupBy(clickEvents.ipHash)
       .orderBy(desc(sql`count(*)`)),
     db.select().from(clickEvents).where(baseWhere).orderBy(desc(clickEvents.occurredAt)).limit(200),
+    db
+      .select({
+        visits: sql<number>`count(*)::int`,
+        visitors: sql<number>`count(distinct ${clickEvents.sessionId})::int`,
+        ips: sql<number>`count(distinct ${clickEvents.ipHash})::int`,
+      })
+      .from(clickEvents)
+      .where(visitWhere),
   ]);
+
+  const visits = Number(visitAgg[0]?.visits ?? 0);
+  const visitVisitors = Number(visitAgg[0]?.visitors ?? 0);
+  const visitIps = Number(visitAgg[0]?.ips ?? 0);
 
   const counts: Record<string, number> = {};
   for (const name of EVENT_NAMES) counts[name] = 0;
@@ -196,7 +214,36 @@ export default async function AdminClicksPage({
           </button>
         </form>
 
+        {/* Visit summary (everyone — including people who don't call/form) */}
+        <h2 className="text-lg font-bold text-secondary mb-3">Ziyaret Özeti</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
+          <div className="card text-center">
+            <p className="text-sm text-gray-500 mb-1">Toplam ziyaret</p>
+            <p className="text-3xl font-bold text-secondary">{visits}</p>
+            <p className="text-xs text-gray-400 mt-1">sayfa görüntüleme</p>
+          </div>
+          <div className="card text-center">
+            <p className="text-sm text-gray-500 mb-1">Benzersiz ziyaretçi</p>
+            <p className="text-3xl font-bold text-secondary">{visitVisitors}</p>
+            <p className="text-xs text-gray-400 mt-1">farklı oturum</p>
+          </div>
+          <div className="card text-center">
+            <p className="text-sm text-gray-500 mb-1">Benzersiz IP</p>
+            <p className="text-3xl font-bold text-secondary">{visitIps}</p>
+            <p className="text-xs text-gray-400 mt-1">farklı IP adresi</p>
+          </div>
+        </div>
+        <p className="text-xs text-gray-500 mb-8">
+          Siteyi ziyaret eden herkes sayılır (arama/form yapmasa bile).{" "}
+          {visits > 0
+            ? `Bu dönemde ${visits} ziyaretin ${total} tanesi bir butona tıklamayla sonuçlandı (≈%${Math.round(
+                (total / visits) * 100,
+              )} dönüşüm).`
+            : "Ziyaret verisi bu özellik yayına alındıktan sonraki ziyaretler için birikir."}
+        </p>
+
         {/* KPI cards */}
+        <h2 className="text-lg font-bold text-secondary mb-3">Buton Tıklamaları</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
           {EVENT_NAMES.map((name) => (
             <div key={name} className="card text-center">

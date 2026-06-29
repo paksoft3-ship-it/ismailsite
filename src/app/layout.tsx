@@ -7,6 +7,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingActions from '@/components/common/FloatingActions';
 import GoogleTagManager from '@/components/seo/GoogleTagManager';
+import PageViewTracker from '@/components/PageViewTracker';
 import siteData from '@/data/site.json';
 
 const BASE_URL = 'https://www.hasarliaracnoktasi.com';
@@ -213,6 +214,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${manrope.className} bg-gray-50`} suppressHydrationWarning>
         <GoogleTagManager />
+        <PageViewTracker />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
