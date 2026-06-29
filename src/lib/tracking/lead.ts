@@ -13,6 +13,48 @@ export interface LeadEvent {
     [key: string]: any;
 }
 
+// --- First-party click beacon (records to /api/track/click -> Postgres) ---
+function clickSid(): string | undefined {
+    try {
+        const k = 'cp_sid';
+        let v = localStorage.getItem(k);
+        if (!v) {
+            v = (typeof crypto !== 'undefined' && crypto.randomUUID)
+                ? crypto.randomUUID()
+                : Math.random().toString(36).slice(2);
+            localStorage.setItem(k, v);
+        }
+        return v;
+    } catch {
+        return undefined;
+    }
+}
+
+export function beaconClick(event: string, location?: string): void {
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') return;
+    try {
+        const payload = JSON.stringify({
+            event,
+            location: location ?? null,
+            path: window.location.pathname,
+            sessionId: clickSid(),
+        });
+        if (navigator.sendBeacon) {
+            navigator.sendBeacon('/api/track/click', new Blob([payload], { type: 'application/json' }));
+        } else {
+            void fetch('/api/track/click', { method: 'POST', body: payload, keepalive: true }).catch(() => {});
+        }
+    } catch {
+        /* never block the click */
+    }
+}
+
+const CLICK_EVENT_BY_TYPE: Record<LeadType, string> = {
+    phone_call: 'phone_click',
+    whatsapp_call: 'whatsapp_click',
+    form_submit: 'quote_click',
+};
+
 export function trackLead({
     type,
     source,
@@ -24,6 +66,9 @@ export function trackLead({
     label?: string; // Can be used as button text or generic label
     value?: number;
 }) {
+    // First-party click beacon (covers all existing call sites automatically)
+    beaconClick(CLICK_EVENT_BY_TYPE[type], source);
+
     if (typeof window !== 'undefined') {
         window.dataLayer = window.dataLayer || [];
 
