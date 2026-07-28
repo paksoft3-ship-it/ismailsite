@@ -188,7 +188,17 @@ export default async function HizmetDetayPage({ params }: Props) {
                 {service.h2Intro || service.title}
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                {service.content.intro}
+                {service.content.intro} Sektördeki iş ortağımız olan, Türkiye&apos;nin her noktasında{' '}
+                <a
+                  href="https://hasarliaracalan.com/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Hasarlı Araç Alan"
+                  className="font-semibold text-primary underline"
+                >
+                  hasarlı araç alan
+                </a>{' '}
+                uzman ekiplerle birlikte aracınıza en yüksek teklifi sunuyoruz.
               </p>
 
               {/* Details List */}

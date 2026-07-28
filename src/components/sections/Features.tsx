@@ -17,7 +17,17 @@ export default function Features() {
         <div className="text-center mb-12">
           <h2 className="section-title">Neden Bizi Tercih Etmelisiniz?</h2>
           <p className="section-subtitle">
-            Hasarlı araç alımında Türkiye&apos;nin en güvenilir adresi. Profesyonel hizmet, şeffaf süreç.
+            Hasarlı araç alımında Türkiye&apos;nin en güvenilir adresi. Türkiye genelinde{' '}
+            <a
+              href="https://hasarliaracalan.com/"
+              target="_blank"
+              rel="noopener"
+              title="Hasarlı Araç Alan"
+              className="font-semibold text-primary underline"
+            >
+              hasarlı araç alan
+            </a>{' '}
+            uzman ekibimizle profesyonel hizmet ve şeffaf süreç sunuyoruz.
           </p>
         </div>
 

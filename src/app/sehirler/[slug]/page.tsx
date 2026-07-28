@@ -211,7 +211,17 @@ export default async function SehirDetayPage({ params }: Props) {
                 {city.name} Hasarlı Araç Alımı
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                {city.content}
+                {city.content} {city.name} ve çevre illerde{' '}
+                <a
+                  href="https://hasarliaracalan.com/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Hasarlı Araç Alan"
+                  className="font-semibold text-primary underline"
+                >
+                  hasarlı araç alan
+                </a>{' '}
+                çözüm ortağımızla aynı gün yerinde ekspertiz ve nakit ödeme imkânı sağlıyoruz.
               </p>
 
               {/* Advantages */}
