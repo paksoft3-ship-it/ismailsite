@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { FaRobot, FaTimes, FaWhatsapp, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import ContactButton from './ContactButton';
 import siteConfig from '@/data/site.json';
+import { beaconClick } from '@/lib/tracking/lead';
 
 const faqs = [
     {
@@ -110,7 +111,10 @@ export default function ChatWidget() {
 
             {/* Toggle Button */}
             <button
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => {
+                    if (!isOpen) beaconClick('chat_open', 'chat_widget');
+                    setIsOpen(!isOpen);
+                }}
                 className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-full shadow-lg shadow-primary/30 flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all text-2xl z-40 relative"
             >
                 {isOpen ? <FaTimes /> : <FaRobot />}
