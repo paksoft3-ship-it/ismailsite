@@ -23,6 +23,22 @@ export default function HomePage() {
       <div id="anasayfa" className="scroll-mt-24">
         <Hero />
       </div>
+      {/* Contextual dofollow backlink — rel must stay free of "nofollow" */}
+      <section className="bg-white py-4 border-b border-gray-100">
+        <p className="container-custom text-center text-sm md:text-base text-gray-600">
+          Türkiye genelinde{' '}
+          <a
+            href="https://hasarliaracalan.com/"
+            target="_blank"
+            rel="noopener"
+            title="Hasarlı Araç Alan - Hasarlı Araç Alım Satım"
+            className="font-semibold text-primary underline"
+          >
+            hasarlı araç alan
+          </a>{' '}
+          güvenilir çözüm ortağımızla pert, kazalı ve hurda araçlarınızı en yüksek fiyatla değerlendiriyoruz.
+        </p>
+      </section>
       <NewsMarquee />
       <Features />
       <StatsCounter />
