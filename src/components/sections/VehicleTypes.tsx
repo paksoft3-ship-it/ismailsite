@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import servicesData from '@/data/services.json';
 
 const colorClasses: Record<string, { bg: string; text: string; hover: string }> = {
@@ -30,9 +29,8 @@ export default function VehicleTypes() {
           {servicesData.services.map((service: any) => {
             const colors = colorClasses[service.iconColor] || colorClasses.primary;
             return (
-              <Link
+              <div
                 key={service.slug}
-                href={`/hizmetler/${service.slug}`}
                 className={`group relative bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 ${colors.hover} hover:text-white transition-all duration-300 hover:-translate-y-1`}
               >
                 <div className="flex items-start gap-4">
@@ -54,10 +52,7 @@ export default function VehicleTypes() {
                     </p>
                   </div>
                 </div>
-                <span className="absolute top-6 right-6 material-symbols-outlined text-gray-500 group-hover:text-white transition-colors">
-                  arrow_forward
-                </span>
-              </Link>
+              </div>
             );
           })}
         </div>

@@ -8,8 +8,7 @@
   "email": "info@hasarliaracnoktasi.com",
   "address": "Otoport Galericiler Sitesi, Esenyurt / İSTANBUL",
   "workingHours": "7/24 Hizmet",
-  "gaId": "G-XXXXXXXXXX",
-  "gtmId": "GTM-XXXXXXX",
+  "gtmId": "GTM-TRX3DJZP",
   "siteName": "Hasarlı Araç Alım Merkezi",
   "siteTitle": "Hasarlı & Kazalı Araç Alımı | En Yüksek Fiyat",
   "siteDescription": "Türkiye genelinde hasarlı, kazalı, pert ve hurda aracınızı 30 dakikada değerlendiriyoruz. En yüksek fiyat, ücretsiz çekici, aynı gün nakit ödeme garantisi.",
@@ -33,25 +32,23 @@
     },
     {
       "title": "Hizmetler",
-      "href": "/hizmetler",
-      "hasDropdown": true
+      "href": "/#hizmetler"
     },
     {
       "title": "Şehirler",
-      "href": "/sehirler",
-      "hasDropdown": true
-    },
-    {
-      "title": "Bilgiler",
-      "href": "/bilgiler"
+      "href": "/#sehirler"
     },
     {
       "title": "Hakkımızda",
-      "href": "/hakkimizda"
+      "href": "/#hakkimizda"
+    },
+    {
+      "title": "SSS",
+      "href": "/#sss"
     },
     {
       "title": "İletişim",
-      "href": "/iletisim"
+      "href": "/#iletisim"
     }
   ],
   "topBar": [
@@ -82,16 +79,7 @@
       "text": "Yerinden Alım"
     }
   ],
-  "googleAds": {
-    "conversionId": "AW-XXXXXXXXX",
-    "phoneConversionLabel": "XXXXXXXXX",
-    "whatsappConversionLabel": "XXXXXXXXX",
-    "formConversionLabel": "XXXXXXXXX"
-  },
   "gtm": {
-    "containerId": "GTM-XXXXXXX"
-  },
-  "analytics": {
-    "measurementId": "G-XXXXXXXXXX"
+    "containerId": "GTM-TRX3DJZP"
   }
 }

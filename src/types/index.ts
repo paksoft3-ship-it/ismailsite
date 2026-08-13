@@ -20,14 +20,7 @@ export interface SiteConfig {
     twitter: string;
     youtube: string;
   };
-  googleAds: {
-    conversionId: string;
-    phoneConversionLabel: string;
-    whatsappConversionLabel: string;
-    formConversionLabel: string;
-  };
   gtmId: string;
-  gaId: string;
 }
 
 export interface Service {

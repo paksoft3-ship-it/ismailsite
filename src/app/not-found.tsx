@@ -29,7 +29,7 @@ export default function NotFound() {
             <span className="material-symbols-outlined">home</span>
             Ana Sayfaya Dön
           </Link>
-          <Link href="/iletisim" className="btn-outline">
+          <Link href="/#iletisim" className="btn-outline">
             <span className="material-symbols-outlined">support_agent</span>
             İletişime Geç
           </Link>

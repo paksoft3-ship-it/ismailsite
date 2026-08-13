@@ -58,25 +58,6 @@ export default function FAQ({ items, limit }: FAQProps) {
             </div>
           ))}
         </div>
-
-        {/* Schema.org FAQ Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: displayItems.map((faq: any) => ({
-                '@type': 'Question',
-                name: faq.question,
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: faq.answer,
-                },
-              })),
-            }),
-          }}
-        />
       </div>
     </section>
   );

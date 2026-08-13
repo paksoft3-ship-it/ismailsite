@@ -1,3 +1,9 @@
+declare global {
+    interface Window {
+        dataLayer: any[];
+    }
+}
+
 export type LeadType = 'phone_call' | 'whatsapp_call' | 'form_submit';
 
 export interface LeadEvent {

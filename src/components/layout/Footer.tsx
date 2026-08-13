@@ -83,30 +83,24 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/hakkimizda" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                <Link href="/#hakkimizda" className="text-gray-400 hover:text-primary transition-colors text-sm">
                   Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link href="/sehirler" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                <Link href="/#sehirler" className="text-gray-400 hover:text-primary transition-colors text-sm">
                   Hizmet Verilen Şehirler
                 </Link>
               </li>
               <li>
-                <Link href="/iletisim" className="text-gray-400 hover:text-primary transition-colors text-sm">
-                  İletişim
+                <Link href="/#sss" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Sık Sorulan Sorular
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://hasarliaracalan.com/"
-                  target="_blank"
-                  rel="noopener"
-                  title="Hasarlı Araç Alan - Hasarlı Araç Alım Satım"
-                  className="text-gray-400 hover:text-primary transition-colors text-sm"
-                >
-                  Hasarlı Araç Alan
-                </a>
+                <Link href="/#iletisim" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  İletişim
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,7 +112,7 @@ export default function Footer() {
               {servicesData.services.map((service: any) => (
                 <li key={service.slug}>
                   <Link
-                    href={`/hizmetler/${service.slug}`}
+                    href="/#hizmetler"
                     className="text-gray-400 hover:text-primary transition-colors text-sm"
                   >
                     {service.shortTitle}
@@ -176,14 +170,14 @@ export default function Footer() {
             {popularCities.map((city: any) => (
               <Link
                 key={city.slug}
-                href={`/sehirler/${city.slug}`}
+                href="/#sehirler"
                 className="px-3 py-1 bg-white/5 rounded-full text-xs text-gray-400 hover:bg-primary hover:text-white transition-colors"
               >
                 {city.name}
               </Link>
             ))}
             <Link
-              href="/sehirler"
+              href="/#sehirler"
               className="px-3 py-1 bg-primary/20 rounded-full text-xs text-primary hover:bg-primary hover:text-white transition-colors"
             >
               Tümünü Gör →
@@ -212,14 +206,6 @@ export default function Footer() {
             <span className="text-[17px] font-extrabold tracking-wide text-white group-hover:text-primary transition-colors">PakSoft</span>
           </a>
 
-          <div className="flex items-center gap-4">
-            <Link href="/gizlilik" className="hover:text-primary transition-colors">
-              Gizlilik Politikası
-            </Link>
-            <Link href="/kullanim-sartlari" className="hover:text-primary transition-colors">
-              Kullanım Şartları
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

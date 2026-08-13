@@ -8,18 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/', '/_next/'],
       },
-      // Explicitly allow AI crawlers
-      { userAgent: 'GPTBot', allow: '/' },
-      { userAgent: 'ClaudeBot', allow: '/' },
-      { userAgent: 'Google-Extended', allow: '/' },
-      { userAgent: 'PerplexityBot', allow: '/' },
-      { userAgent: 'Amazonbot', allow: '/' },
-      { userAgent: 'anthropic-ai', allow: '/' },
-      { userAgent: 'ChatGPT-User', allow: '/' },
-      { userAgent: 'Applebot', allow: '/' },
-      { userAgent: 'cohere-ai', allow: '/' },
     ],
     sitemap: 'https://www.hasarliaracnoktasi.com/sitemap.xml',
-    host: 'https://www.hasarliaracnoktasi.com',
   };
 }
