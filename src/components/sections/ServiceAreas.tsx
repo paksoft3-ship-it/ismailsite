@@ -4,6 +4,7 @@
 
 'use client';
 
+import Link from 'next/link';
 import Image from 'next/image';
 import citiesData from '@/data/cities.json';
 
@@ -135,12 +136,13 @@ export default function ServiceAreas() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {region.cities.slice(0, 5).map((city) => (
-                  <span
+                  <Link
                     key={city.slug}
-                    className="text-xs text-gray-400"
+                    href={`/sehirler/${city.slug}`}
+                    className="text-xs text-gray-400 hover:text-primary transition-colors"
                   >
                     {city.name}
-                  </span>
+                  </Link>
                 ))}
                 {region.cities.length > 5 && (
                   <span className="text-xs text-gray-500">+{region.cities.length - 5}</span>
@@ -150,6 +152,16 @@ export default function ServiceAreas() {
           ))}
         </div>
 
+        {/* CTA */}
+        <div className="text-center mt-12">
+          <Link
+            href="/sehirler"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-lg transition-all"
+          >
+            Tüm Şehirleri Gör
+            <span className="material-symbols-outlined">arrow_forward</span>
+          </Link>
+        </div>
       </div>
     </section>
   );

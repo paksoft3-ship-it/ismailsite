@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import citiesData from '@/data/cities.json';
 
 interface CitySelectorProps {
@@ -24,8 +25,9 @@ export default function CitySelector({ limit = 12, showAllLink = true }: CitySel
         {/* Cities Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {popularCities.map((city: any) => (
-            <div
+            <Link
               key={city.slug}
+              href={`/sehirler/${city.slug}`}
               className="group relative bg-gray-50 rounded-xl p-4 text-center hover:bg-primary hover:shadow-lg transition-all duration-300"
             >
               <span className="material-symbols-outlined text-3xl text-primary group-hover:text-white mb-2 block transition-colors">
@@ -37,9 +39,22 @@ export default function CitySelector({ limit = 12, showAllLink = true }: CitySel
               <p className="text-xs text-gray-500 group-hover:text-white/80 mt-1 transition-colors">
                 {city.plateCode} Plaka
               </p>
-            </div>
+            </Link>
           ))}
         </div>
+
+        {/* Show All Link */}
+        {showAllLink && (
+          <div className="text-center mt-8">
+            <Link
+              href="/sehirler"
+              className="btn-outline"
+            >
+              <span className="material-symbols-outlined">map</span>
+              Tüm Şehirleri Gör
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

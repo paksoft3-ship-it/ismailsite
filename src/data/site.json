@@ -32,23 +32,25 @@
     },
     {
       "title": "Hizmetler",
-      "href": "/#hizmetler"
+      "href": "/hizmetler",
+      "hasDropdown": true
     },
     {
       "title": "Şehirler",
-      "href": "/#sehirler"
+      "href": "/sehirler",
+      "hasDropdown": true
     },
     {
       "title": "Hakkımızda",
-      "href": "/#hakkimizda"
+      "href": "/hakkimizda"
     },
     {
       "title": "SSS",
-      "href": "/#sss"
+      "href": "/sss"
     },
     {
       "title": "İletişim",
-      "href": "/#iletisim"
+      "href": "/iletisim"
     }
   ],
   "topBar": [
